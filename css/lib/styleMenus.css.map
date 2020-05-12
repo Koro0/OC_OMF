@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,IAAI;EACtB,eAAe,EAAE,MAAM;CAQ1B;;AANO,UAAU;EAJlB,AAGK,MAHC,CAGD,CAAC,CAAD;IAEO,WAAW,EAAE,WAAW;IACxB,GAAG,EAAE,4BAA4B,CAAC,WAAW;IAC7C,GAAG,EAAE,4BAA4B,CAAC,WAAW;GAEnD;;;AAGN,AAAA,MAAM,CAAC;EACH,gBAAgB,EAAE,KAAK;CAC1B",
+    "sources": [
+        "styleMenus.scss"
+    ],
+    "names": [],
+    "file": "styleMenus.css"
+}

@@ -1,0 +1,50 @@
+
+
+header {
+    text-align: center;
+    background-color: cyan;
+    color: white;
+    height: 10%;
+    padding: 20px;
+}
+
+.home {
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 3fr 3fr 1fr;
+    grid-row: 20px;
+    column-gap: 10px;
+    row-gap: 10px;
+    text-align: center;
+    height: 100%;
+    .last {
+        text-align: center;
+        grid-column: 1/-1;
+        height: 10%;
+    }
+    a :hover {
+        font-size: 20px;
+        transition-duration: 1s;
+    }
+    @import "lib/styleMenus.scss";
+}
+
+nav {
+    display: flex;
+    background-color: cyan;
+    .mention {
+        margin-right: auto;
+    }
+    .contact {
+        margin-left: auto;
+    }
+}
+
+.content {
+    display: grid; grid-template-columns: 4fr 1fr;
+    h3 , h2{
+        grid-row: 1/-1;
+    }
+
+}
+

@@ -1,0 +1,73 @@
+header {
+  text-align: center;
+  background-color: cyan;
+  color: white;
+  height: 10%;
+  padding: 20px;
+}
+
+.home {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 3fr 3fr 1fr;
+      grid-template-rows: 3fr 3fr 1fr;
+  -ms-grid-row: 20;
+  grid-row: 20px;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+  row-gap: 10px;
+  text-align: center;
+  height: 100%;
+}
+
+.home .last {
+  text-align: center;
+  grid-column: 1/-1;
+  height: 10%;
+}
+
+.home a :hover {
+  font-size: 20px;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+}
+
+.home .menu1 {
+  background-color: pink;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.home .menu2 {
+  background-color: white;
+}
+
+nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: cyan;
+}
+
+nav .mention {
+  margin-right: auto;
+}
+
+nav .contact {
+  margin-left: auto;
+}
+
+.content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 4fr 1fr;
+      grid-template-columns: 4fr 1fr;
+}
+
+.content h3, .content h2 {
+  grid-row: 1/-1;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,14 @@
+.menu1 {
+    background-color: pink;
+    justify-content: center;
+    
+     @font-face {
+        font-family: SweetPurple;
+        src: url(polices/sweetpurple.otf) format(otf);
+        src: url(polices/sweetpurple.ttf) format(ttf);
+     }
+}
+
+.menu2 {
+    background-color: white;
+}
