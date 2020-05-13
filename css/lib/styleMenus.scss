@@ -1,6 +1,11 @@
+/**Couleur**/
+$colorMenu1: pink;
+$colorMenu2: white;
+$colorMenu3: white;
+$colorMenu4: rgba(228, 228, 228, 1);
 .menu1 {
-    background-color: pink;
-    justify-content: center;
+    background-color: $colorMenu1;
+
     
      @font-face {
         font-family: SweetPurple;
@@ -10,5 +15,5 @@
 }
 
 .menu2 {
-    background-color: white;
+    background-color: $colorMenu2;
 }

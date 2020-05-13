@@ -20,6 +20,8 @@ header {
   row-gap: 10px;
   text-align: center;
   height: 100%;
+  -webkit-box-shadow: 2px 2px 2px #b1b1b1;
+          box-shadow: 2px 2px 2px #b1b1b1;
 }
 
 .home .last {
@@ -29,16 +31,23 @@ header {
 }
 
 .home a :hover {
-  font-size: 20px;
-  -webkit-transition-duration: 1s;
-          transition-duration: 1s;
+  -webkit-transform: scale(1.15);
+          transform: scale(1.15);
+  -webkit-transition-duration: 0.5s;
+          transition-duration: 0.5s;
 }
 
 .home .menu1 {
   background-color: pink;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
+}
+
+@font-face {
+  .home .menu1 {
+    font-family: SweetPurple;
+    src: url(polices/sweetpurple.otf) format(otf);
+    src: url(polices/sweetpurple.ttf) format(ttf);
+  }
 }
 
 .home .menu2 {
