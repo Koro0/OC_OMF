@@ -1,19 +1,25 @@
 /**Couleur**/
-$colorMenu1: pink;
-$colorMenu2: white;
-$colorMenu3: white;
+$colorMenu1: rgba(252, 223, 219, 1);
+$colorMenu2: rgba(255, 245, 254, 1);
+$colorMenu3: rgba(249, 249, 249, 1);
 $colorMenu4: rgba(228, 228, 228, 1);
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap');
+
 .menu1 {
     background-color: $colorMenu1;
-
-    
-     @font-face {
-        font-family: SweetPurple;
-        src: url(polices/sweetpurple.otf) format(otf);
-        src: url(polices/sweetpurple.ttf) format(ttf);
-     }
+    font-family: 'Pacifico', cursive;
 }
 
 .menu2 {
     background-color: $colorMenu2;
+    font-family: 'Merienda One', cursive;
+}
+
+.menu3 {
+    font-family: 'Dancing Script', cursive;
+}
+
+.menu4 {
+    font-family: 'Lemonada', cursive;
 }

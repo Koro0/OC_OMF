@@ -1,33 +1,56 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
 header {
   text-align: center;
-  background-color: cyan;
-  color: white;
+  background-color: #579c87;
   height: 10%;
-  padding: 20px;
 }
 
 .home {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 3fr 3fr 1fr;
-      grid-template-rows: 3fr 3fr 1fr;
-  -ms-grid-row: 20;
-  grid-row: 20px;
-  -webkit-column-gap: 10px;
-          column-gap: 10px;
-  row-gap: 10px;
-  text-align: center;
-  height: 100%;
-  -webkit-box-shadow: 2px 2px 2px #b1b1b1;
-          box-shadow: 2px 2px 2px #b1b1b1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  min-height: 80%;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  /**Couleur**/
 }
 
-.home .last {
-  text-align: center;
-  grid-column: 1/-1;
-  height: 10%;
+.home > .menus {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: calc(50% - 30px);
+      flex-basis: calc(50% - 30px);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.home > .menus > .titleM {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
 }
 
 .home a :hover {
@@ -38,45 +61,86 @@ header {
 }
 
 .home .menu1 {
-  background-color: pink;
-  text-align: center;
-}
-
-@font-face {
-  .home .menu1 {
-    font-family: SweetPurple;
-    src: url(polices/sweetpurple.otf) format(otf);
-    src: url(polices/sweetpurple.ttf) format(ttf);
-  }
+  background-color: #fcdfdb;
+  font-family: 'Pacifico', cursive;
 }
 
 .home .menu2 {
-  background-color: white;
+  background-color: #fff5fe;
+  font-family: 'Merienda One', cursive;
 }
 
-nav {
+.home .menu3 {
+  font-family: 'Dancing Script', cursive;
+}
+
+.home .menu4 {
+  font-family: 'Lemonada', cursive;
+}
+
+.home p {
+  margin: auto;
+}
+
+.home .last {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+  height: 10%;
+  background-color: #579c87;
+}
+
+.home footer {
+  height: 10%;
+}
+
+.home nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: cyan;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #579c87;
 }
 
-nav .mention {
+.home nav .mention {
+  margin-right: 10px;
+}
+
+.home nav .contact {
+  margin-left: 10px;
+}
+
+.content h2 {
+  text-align: center;
+  margin-left: auto;
   margin-right: auto;
 }
 
-nav .contact {
-  margin-left: auto;
+.content section {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
-.content {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 4fr 1fr;
-      grid-template-columns: 4fr 1fr;
+.content section h3 {
+  text-align: center;
 }
 
-.content h3, .content h2 {
-  grid-row: 1/-1;
+.content section div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.title {
+  color: yellow;
+}
+
+a:link {
+  text-decoration: none;
 }
 /*# sourceMappingURL=style.css.map */
