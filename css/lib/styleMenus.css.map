@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,aAAa;AAMb,OAAO,CAAC,iJAAI;AAEZ,AAAA,MAAM,CAAC;EACH,gBAAgB,EARP,OAAsB;EAS/B,WAAW,EAAE,mBAAmB;CACnC;;AAED,AAAA,MAAM,CAAC;EACH,gBAAgB,EAZP,OAAsB;EAa/B,WAAW,EAAE,uBAAuB;CACvC;;AAED,AAAA,MAAM,CAAC;EACH,WAAW,EAAE,yBAAyB;CACzC;;AAED,AAAA,MAAM,CAAC;EACH,WAAW,EAAE,mBAAmB;CACnC",
-    "sources": [
-        "styleMenus.scss"
-    ],
-    "names": [],
-    "file": "styleMenus.css"
-}

@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 html, body {
   height: 100%;
   width: 100%;
@@ -17,7 +18,7 @@ header {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  min-height: 80%;
+  height: 70%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -25,12 +26,17 @@ header {
   /**Couleur**/
 }
 
+.home > div {
+  height: auto;
+  width: 40%;
+}
+
 .home > .menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-preferred-size: calc(50% - 30px);
-      flex-basis: calc(50% - 30px);
+  -ms-flex-preferred-size: calc(50% - 40px);
+      flex-basis: calc(50% - 40px);
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -38,6 +44,8 @@ header {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  padding: 12px;
+  margin: 10px auto 10px;
 }
 
 .home > .menus > .titleM {
@@ -71,10 +79,12 @@ header {
 }
 
 .home .menu3 {
+  background-color: #f9f9f9;
   font-family: 'Dancing Script', cursive;
 }
 
 .home .menu4 {
+  background-color: #e4e4e4;
   font-family: 'Lemonada', cursive;
 }
 
@@ -82,58 +92,57 @@ header {
   margin: auto;
 }
 
-.home .last {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  width: auto;
+.last {
+  margin: auto;
+  width: 20%;
   height: 10%;
   background-color: #579c87;
 }
 
-.home footer {
+footer {
   height: 10%;
 }
 
-.home nav {
+footer nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   background-color: #579c87;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 20px;
 }
 
-.home nav .mention {
+footer nav .mention {
+  margin-left: 20px;
+}
+
+footer nav .contact {
   margin-right: 10px;
 }
 
-.home nav .contact {
-  margin-left: 10px;
+/**Couleur**/
+.menu1 {
+  background-color: #fcdfdb;
+  font-family: 'Pacifico', cursive;
 }
 
-.content h2 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.menu2 {
+  background-color: #fff5fe;
+  font-family: 'Merienda One', cursive;
 }
 
-.content section {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+.menu3 {
+  background-color: #f9f9f9;
+  font-family: 'Dancing Script', cursive;
 }
 
-.content section h3 {
-  text-align: center;
-}
-
-.content section div {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+.menu4 {
+  background-color: #e4e4e4;
+  font-family: 'Lemonada', cursive;
 }
 
 .title {
@@ -143,4 +152,47 @@ header {
 a:link {
   text-decoration: none;
 }
+
+a:visited {
+  text-decoration: none;
+}
+
+main h2 {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+main .content {
+  margin: 10px;
+}
+
+main .content section {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .content section h3 {
+  text-align: center;
+}
+
+main .content section > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+/** Style pour les pages de s menus**/
+.mention {
+  margin-left: auto;
+}
+
+.contact {
+  margin-right: auto;
+}
+
+/** style pour la page mention**/
 /*# sourceMappingURL=style.css.map */

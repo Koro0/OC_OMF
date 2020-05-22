@@ -16,14 +16,19 @@ header {
 .home {
     display: flex;
     flex-wrap: wrap;
-    min-height: 80%;
+    height: 70%;
     flex-direction: row;
-    
+    > div {
+        height: auto;
+        width: 40%;
+    }
     > .menus {
         display: flex;
-        flex-basis: calc(50% - 30px);
+        flex-basis: calc(50% - 40px);
         justify-content: center;
         flex-direction: column;
+        padding: 12px;
+        margin: 10px auto 10px;
         
         
         > .titleM {
@@ -40,34 +45,35 @@ header {
     p {
         margin: auto;
     }
-    .last {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        width: auto;
-        height: 10%;
-        background-color: rgba(87, 156, 135, 1.0);
+    
+}
 
+.last {
+    margin: auto;
+    width: 20%;
+    height: 10%;
+    background-color: rgba(87, 156, 135, 1.0);
 }
 
 footer{
     height: 10%;
-    }
+    
     nav {
         display: flex;
         flex-wrap: wrap;
         background-color: rgba(87, 156, 135, 1.0);
+        justify-content: space-between;
+        padding: 20px;
         .mention {
-                margin-right: 10px;
+                margin-left: 20px;
             }
         .contact {
-                margin-left: 10px;
+                margin-right: 10px;
             }
     }
 }
 
-@import "lib/styleMenusPages.scss";
-
+@import "lib/styleMenus.scss";
 .title {
     color: yellow;
     }
@@ -75,3 +81,12 @@ footer{
 a:link {
     text-decoration: none;
 }
+a:visited {
+    text-decoration: none;
+}
+
+@import "lib/styleMenusPages.scss";
+/** Style pour les pages de s menus**/
+
+@import "lib/styleMention.scss";
+/** style pour la page mention**/
