@@ -1,23 +1,21 @@
-main {
-    h2 {
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-        }
+.mainMenus {
+    height: 80%;
 
     .content {
         margin: 10px;
-        
-        section {
-            justify-content: space-between;
-            h3 {
+        h2 {
             text-align: center;
+            margin: auto;
             }
-            > div {
+        ul {
+            ol {
                 display: flex;
                 flex-wrap: wrap;
             }
+                
+             
         }
+        
 
     }
 }

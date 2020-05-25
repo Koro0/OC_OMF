@@ -3,55 +3,62 @@
 html, body {
     height: 100%;
     width: 100%;
-    margin: 0;
+    
 }
 header {
     text-align: center;
     
     background-color: rgba(87, 156, 135, 1.0);
     height: 10%;
+    h1 {
+        margin: 0px 0px 0px 0px;
+        height: 100%;
+    }
     
 }
 
-.home {
-    display: flex;
-    flex-wrap: wrap;
-    height: 70%;
-    flex-direction: row;
-    > div {
-        height: auto;
-        width: 40%;
-    }
-    > .menus {
+main {
+    height: 80%;
+    .home {
         display: flex;
-        flex-basis: calc(50% - 40px);
-        justify-content: center;
-        flex-direction: column;
-        padding: 12px;
-        margin: 10px auto 10px;
-        
-        
-        > .titleM {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
+        flex-wrap: wrap;
+        height: 90%;
+        flex-direction: row;
+        > div {
+            height: auto;
+            width: 40%;
         }
+        > .menus {
+            display: flex;
+            flex-basis: calc(50% - 40px);
+            justify-content: center;
+            flex-direction: column;
+            padding: 12px;
+            margin: 10px auto 10px;
+            
+            
+            > .titleM {
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+            }
+        }
+        a :hover {
+            transform: scale(1.15);
+            transition-duration: 0.5s;
+        }
+        @import "lib/styleMenus.scss";
+        p {
+            margin: auto;
+        }
+        
     }
-    a :hover {
-        transform: scale(1.15);
-        transition-duration: 0.5s;
-    }
-    @import "lib/styleMenus.scss";
-    p {
-        margin: auto;
-    }
-    
 }
 
 .last {
     margin: auto;
     width: 20%;
-    height: 10%;
+    height: 5%;
     background-color: rgba(87, 156, 135, 1.0);
 }
 

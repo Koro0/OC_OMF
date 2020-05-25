@@ -3,7 +3,6 @@
 html, body {
   height: 100%;
   width: 100%;
-  margin: 0;
 }
 
 header {
@@ -12,13 +11,22 @@ header {
   height: 10%;
 }
 
-.home {
+header h1 {
+  margin: 0px 0px 0px 0px;
+  height: 100%;
+}
+
+main {
+  height: 80%;
+}
+
+main .home {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  height: 70%;
+  height: 90%;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -26,12 +34,12 @@ header {
   /**Couleur**/
 }
 
-.home > div {
+main .home > div {
   height: auto;
   width: 40%;
 }
 
-.home > .menus {
+main .home > .menus {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -48,7 +56,7 @@ header {
   margin: 10px auto 10px;
 }
 
-.home > .menus > .titleM {
+main .home > .menus > .titleM {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,41 +69,41 @@ header {
           flex-direction: row;
 }
 
-.home a :hover {
+main .home a :hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
 }
 
-.home .menu1 {
+main .home .menu1 {
   background-color: #fcdfdb;
   font-family: 'Pacifico', cursive;
 }
 
-.home .menu2 {
+main .home .menu2 {
   background-color: #fff5fe;
   font-family: 'Merienda One', cursive;
 }
 
-.home .menu3 {
+main .home .menu3 {
   background-color: #f9f9f9;
   font-family: 'Dancing Script', cursive;
 }
 
-.home .menu4 {
+main .home .menu4 {
   background-color: #e4e4e4;
   font-family: 'Lemonada', cursive;
 }
 
-.home p {
+main .home p {
   margin: auto;
 }
 
 .last {
   margin: auto;
   width: 20%;
-  height: 10%;
+  height: 5%;
   background-color: #579c87;
 }
 
@@ -157,27 +165,20 @@ a:visited {
   text-decoration: none;
 }
 
-main h2 {
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
+.mainMenus {
+  height: 80%;
 }
 
-main .content {
+.mainMenus .content {
   margin: 10px;
 }
 
-main .content section {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-main .content section h3 {
+.mainMenus .content h2 {
   text-align: center;
+  margin: auto;
 }
 
-main .content section > div {
+.mainMenus .content ul ol {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
