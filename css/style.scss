@@ -7,7 +7,7 @@ html, body {
 }
 header {
     text-align: center;
-    
+    top: 0;
     background-color: rgba(87, 156, 135, 1.0);
     height: 10%;
     h1 {
@@ -102,4 +102,6 @@ a:visited {
 @import "lib/styleMenusPages.scss";
 /** Style pour les pages de s menus**/
 
-@import "lib/styleHook.scss"
+@import "lib/styleHook.scss";
+/** style sticky sur footer **/
+@import "lib/styleContact.scss"
