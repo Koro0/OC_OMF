@@ -60,17 +60,24 @@ main {
     width: 20%;
     height: 5%;
     background-color: rgba(87, 156, 135, 1.0);
+    text-align: center;
+    
 }
 
 footer{
     height: 10%;
+    text-align: justify;
+    position: sticky;
+    bottom: 0;
+    background-color: rgba(87, 156, 135, 1.0);
     
     nav {
         display: flex;
         flex-wrap: wrap;
-        background-color: rgba(87, 156, 135, 1.0);
+        
         justify-content: space-between;
         padding: 20px;
+        
         .mention {
                 margin-left: 20px;
             }
@@ -95,5 +102,4 @@ a:visited {
 @import "lib/styleMenusPages.scss";
 /** Style pour les pages de s menus**/
 
-@import "lib/styleMention.scss";
-/** style pour la page mention**/
+@import "lib/styleHook.scss"

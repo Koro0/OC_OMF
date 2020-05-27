@@ -105,10 +105,16 @@ main .home p {
   width: 20%;
   height: 5%;
   background-color: #579c87;
+  text-align: center;
 }
 
 footer {
   height: 10%;
+  text-align: justify;
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #579c87;
 }
 
 footer nav {
@@ -117,7 +123,6 @@ footer nav {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  background-color: #579c87;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -165,12 +170,22 @@ a:visited {
   text-decoration: none;
 }
 
+.return a :visited {
+  color: yellow;
+}
+
+.return a :link {
+  color: yellow;
+}
+
 .mainMenus {
   height: 80%;
 }
 
 .mainMenus .content {
   margin: 10px;
+  height: 100%;
+  margin: 20px 25px 20px;
 }
 
 .mainMenus .content h2 {
@@ -178,22 +193,34 @@ a:visited {
   margin: auto;
 }
 
-.mainMenus .content ul ol {
+.mainMenus .content .plats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainMenus .content .plats .nomPlat {
+  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
 }
 
 /** Style pour les pages de s menus**/
-.mention {
-  margin-left: auto;
+.stickyFooter {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  background-color: #579c87;
 }
 
-.contact {
-  margin-right: auto;
+.stickyHeader {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: #579c87;
 }
-
-/** style pour la page mention**/
 /*# sourceMappingURL=style.css.map */

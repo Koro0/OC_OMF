@@ -1,21 +1,39 @@
+.return {
+    a {
+        :visited {
+            color: yellow;
+        }
+        :link {
+            color: yellow;
+        }
+    }
+}
+
 .mainMenus {
     height: 80%;
 
     .content {
         margin: 10px;
+        height: 100%;
+        margin: 20px 25px 20px;
+        
         h2 {
             text-align: center;
             margin: auto;
-            }
-        ul {
-            ol {
-                display: flex;
-                flex-wrap: wrap;
-            }
-                
-             
         }
+        .plats {
+            display: flex;
+            justify-content: flex-end;
+
+            .nomPlat {
+                margin-left: auto;
+                flex-grow: 1;
+            }
+        }
+
+    }        
+             
+}
         
 
-    }
-}
+
