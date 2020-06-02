@@ -7,26 +7,25 @@ html, body {
 }
 header {
     text-align: center;
-    top: 0;
+    padding: 10px;
     background-color: rgba(87, 156, 135, 1.0);
     height: 10%;
     h1 {
-        margin: 0px 0px 0px 0px;
-        height: 100%;
+        margin: 10px auto;
+        text-align: center;
     }
     
 }
 
 main {
-    height: 80%;
+    
     .home {
         display: flex;
         flex-wrap: wrap;
         height: 90%;
         flex-direction: row;
-        > div {
-            height: auto;
-            width: 40%;
+        .shadow {
+            box-shadow: 6px 5px 1px #a09b9b;
         }
         > .menus {
             display: flex;
@@ -34,18 +33,24 @@ main {
             justify-content: center;
             flex-direction: column;
             padding: 12px;
-            margin: 10px auto 10px;
-            
+            margin: 25px auto;
+            max-width: 40%;
             
             > .titleM {
                 display: flex;
                 justify-content: center;
-                flex-direction: row;
+                flex-direction: column;
+                text-align: center;
             }
         }
         a :hover {
             transform: scale(1.15);
             transition-duration: 0.5s;
+        }
+        a > div {
+            height: 300px;
+            max-width: 250px;
+        
         }
         @import "lib/styleMenus.scss";
         p {

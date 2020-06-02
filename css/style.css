@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 html, body {
   height: 100%;
   width: 100%;
@@ -7,18 +9,14 @@ html, body {
 
 header {
   text-align: center;
-  top: 0;
+  padding: 10px;
   background-color: #579c87;
   height: 10%;
 }
 
 header h1 {
-  margin: 0px 0px 0px 0px;
-  height: 100%;
-}
-
-main {
-  height: 80%;
+  margin: 10px auto;
+  text-align: center;
 }
 
 main .home {
@@ -35,9 +33,9 @@ main .home {
   /**Couleur**/
 }
 
-main .home > div {
-  height: auto;
-  width: 40%;
+main .home .shadow {
+  -webkit-box-shadow: 6px 5px 1px #a09b9b;
+          box-shadow: 6px 5px 1px #a09b9b;
 }
 
 main .home > .menus {
@@ -54,7 +52,8 @@ main .home > .menus {
       -ms-flex-direction: column;
           flex-direction: column;
   padding: 12px;
-  margin: 10px auto 10px;
+  margin: 25px auto;
+  max-width: 40%;
 }
 
 main .home > .menus > .titleM {
@@ -64,10 +63,11 @@ main .home > .menus > .titleM {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
 }
 
 main .home a :hover {
@@ -75,6 +75,11 @@ main .home a :hover {
           transform: scale(1.15);
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
+}
+
+main .home a > div {
+  height: 300px;
+  max-width: 250px;
 }
 
 main .home .menu1 {
@@ -184,9 +189,9 @@ a:visited {
 }
 
 .mainMenus .content {
-  margin: 10px;
+  max-width: 600px;
   height: 100%;
-  margin: 20px 25px 20px;
+  margin: 20px auto 20px;
 }
 
 .mainMenus .content h2 {
