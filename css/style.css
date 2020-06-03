@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 html, body {
@@ -31,11 +33,6 @@ main .home {
       -ms-flex-direction: row;
           flex-direction: row;
   /**Couleur**/
-}
-
-main .home .shadow {
-  -webkit-box-shadow: 6px 5px 1px #a09b9b;
-          box-shadow: 6px 5px 1px #a09b9b;
 }
 
 main .home > .menus {
@@ -70,6 +67,11 @@ main .home > .menus > .titleM {
   text-align: center;
 }
 
+main .home > .menus > .titleM .shadow {
+  -webkit-box-shadow: 6px 5px 1px #a09b9b;
+          box-shadow: 6px 5px 1px #a09b9b;
+}
+
 main .home a :hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
@@ -84,7 +86,7 @@ main .home a > div {
 
 main .home .menu1 {
   background-color: #fcdfdb;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Devonshire', cursive;
 }
 
 main .home .menu2 {
@@ -115,7 +117,6 @@ main .home p {
 }
 
 footer {
-  height: 10%;
   text-align: justify;
   position: -webkit-sticky;
   position: sticky;
@@ -146,7 +147,7 @@ footer nav .contact {
 /**Couleur**/
 .menu1 {
   background-color: #fcdfdb;
-  font-family: 'Pacifico', cursive;
+  font-family: 'Devonshire', cursive;
 }
 
 .menu2 {
@@ -184,8 +185,8 @@ a:visited {
   color: yellow;
 }
 
-.mainMenus {
-  height: 80%;
+.mainMenus h2 {
+  text-align: center;
 }
 
 .mainMenus .content {
@@ -194,7 +195,24 @@ a:visited {
   margin: 20px auto 20px;
 }
 
-.mainMenus .content h2 {
+.mainMenus .content h3 {
+  text-align: center;
+}
+
+.mainMenus .content h4 {
+  text-align: center;
+}
+
+.mainMenus .content .stepName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3px;
+}
+
+.mainMenus .content .stepName h4 {
   text-align: center;
   margin: auto;
 }

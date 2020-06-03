@@ -4,12 +4,13 @@ $colorMenu2: rgba(255, 245, 254, 1);
 $colorMenu3: rgba(249, 249, 249, 1);
 $colorMenu4: rgba(228, 228, 228, 1);
 
+@import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 .menu1 {
     background-color: $colorMenu1;
     
-    font-family: 'Pacifico', cursive;
+    font-family: 'Devonshire', cursive;
 }
 
 .menu2 {
@@ -28,4 +29,11 @@ $colorMenu4: rgba(228, 228, 228, 1);
     
     background-color: $colorMenu4;
     font-family: 'Lemonada', cursive;
+}
+
+span.menu1m {
+    font-family:  'Sriracha', cursive;
+}
+.titleHeader {
+    font-family: 'Noto Serif', serif;
 }

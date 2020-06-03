@@ -10,9 +10,10 @@
 }
 
 .mainMenus {
-    height: 80%;
+    
     h2 {
         text-align: center;
+        
     }
     .content {
         max-width: 600px;
@@ -21,8 +22,13 @@
         h3 {
             text-align: center;
         }
+        h4 {
+            text-align: center;
+        }
         .stepName {
             display: flex;
+            justify-content: space-around;
+            margin: 3px;
             
             h4 {
                 text-align: center;

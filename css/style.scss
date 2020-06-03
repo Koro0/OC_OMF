@@ -24,9 +24,7 @@ main {
         flex-wrap: wrap;
         height: 90%;
         flex-direction: row;
-        .shadow {
-            box-shadow: 6px 5px 1px #a09b9b;
-        }
+        
         > .menus {
             display: flex;
             flex-basis: calc(50% - 40px);
@@ -41,6 +39,9 @@ main {
                 justify-content: center;
                 flex-direction: column;
                 text-align: center;
+                .shadow {
+                    box-shadow: 6px 5px 1px #a09b9b;
+                }
             }
         }
         a :hover {
@@ -70,7 +71,7 @@ main {
 }
 
 footer{
-    height: 10%;
+    
     text-align: justify;
     position: sticky;
     bottom: 0;
