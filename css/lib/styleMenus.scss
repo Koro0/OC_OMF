@@ -1,39 +1,69 @@
 /**Couleur**/
-$colorMenu1: rgba(252, 223, 219, 1);
-$colorMenu2: rgba(255, 245, 254, 1);
-$colorMenu3: rgba(249, 249, 249, 1);
-$colorMenu4: rgba(228, 228, 228, 1);
+$BGcolorMenu1: rgba(252, 223, 219, 1);
+$BGcolorMenu2: rgba(255, 245, 254, 1);
+$BGcolorMenu3: rgba(249, 249, 249, 1);
+$BGcolorMenu4: rgba(228, 228, 228, 1);
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 .menu1 {
-    background-color: $colorMenu1;
+    background-color: $BGcolorMenu1;
     
     font-family: 'Devonshire', cursive;
 }
 
 .menu2 {
     
-    background-color: $colorMenu2;
+    background-color: $BGcolorMenu2;
     font-family: 'Merienda One', cursive;
 }
 
 .menu3 {
     
-    background-color: $colorMenu3;
+    background-color: $BGcolorMenu3;
     font-family: 'Dancing Script', cursive;
 }
 
 .menu4 {
     
-    background-color: $colorMenu4;
+    background-color: $BGcolorMenu4;
     font-family: 'Lemonada', cursive;
 }
 
-span.menu1m {
+.menu1m {
     font-family:  'Sriracha', cursive;
 }
-.titleHeader {
+.menu2m {
+    font-family: 'Playfair Display', serif;
+}
+.titleHeader , .mentions {
     font-family: 'Noto Serif', serif;
+}
+.fontMenu {
+    
+}
+.menu1Color{
+    color: rgba(61, 19, 25, 1);
+}
+.menu2Color {
+    
+    background: rgb(88,131,237);
+    background: linear-gradient(270deg, rgba(88,131,237,0.6054796918767507) 13%, rgba(141,129,160,1) 30%, rgba(242,176,7,1) 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.menu3Color {
+    
+    background: rgb(3,72,244);
+    background: linear-gradient(114deg, rgba(3,72,244,0.8491771708683473) 13%, rgba(96,107,235,1) 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+.menu4Color {
+    background: rgb(2,115,0);
+    background: linear-gradient(114deg, rgba(2,115,0,1) 13%, rgba(68,242,79,1) 60%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
 }

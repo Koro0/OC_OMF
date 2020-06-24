@@ -1,14 +1,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
-html, body {
-  height: 100%;
-  width: 100%;
-}
-
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 header {
   text-align: center;
   padding: 10px;
@@ -68,8 +65,28 @@ main .home > .menus > .titleM {
 }
 
 main .home > .menus > .titleM .shadow {
-  -webkit-box-shadow: 6px 5px 1px #a09b9b;
-          box-shadow: 6px 5px 1px #a09b9b;
+  -webkit-box-shadow: 1px 1px 15px #a09b9b;
+          box-shadow: 1px 1px 15px #a09b9b;
+}
+
+main .home > .menus > .titleM .carte {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 400px;
+  margin: 0 auto;
+}
+
+main .home > .menus > .titleM .carte img {
+  width: 50px;
+  margin: 0 auto;
 }
 
 main .home a :hover {
@@ -102,6 +119,44 @@ main .home .menu3 {
 main .home .menu4 {
   background-color: #e4e4e4;
   font-family: 'Lemonada', cursive;
+}
+
+main .home .menu1m {
+  font-family: 'Sriracha', cursive;
+}
+
+main .home span.menu2Title {
+  font-family: 'Playfair Display', serif;
+}
+
+main .home .titleHeader, main .home .mentions {
+  font-family: 'Noto Serif', serif;
+}
+
+main .home .menu1Color {
+  color: #3d1319;
+}
+
+main .home .menu2Color {
+  background: #5883ed;
+  background: -webkit-gradient(linear, right top, left top, color-stop(13%, rgba(88, 131, 237, 0.60548)), color-stop(30%, #8d81a0), color-stop(60%, #f2b007));
+  background: linear-gradient(270deg, rgba(88, 131, 237, 0.60548) 13%, #8d81a0 30%, #f2b007 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+main .home .menu3Color {
+  background: #0348f4;
+  background: linear-gradient(114deg, rgba(3, 72, 244, 0.849177) 13%, #606beb 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+main .home .menu4Color {
+  background: #027300;
+  background: linear-gradient(114deg, #027300 13%, #44f24f 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 
 main .home p {
@@ -165,6 +220,44 @@ footer nav .contact {
   font-family: 'Lemonada', cursive;
 }
 
+.menu1m {
+  font-family: 'Sriracha', cursive;
+}
+
+span.menu2Title {
+  font-family: 'Playfair Display', serif;
+}
+
+.titleHeader, .mentions {
+  font-family: 'Noto Serif', serif;
+}
+
+.menu1Color {
+  color: #3d1319;
+}
+
+.menu2Color {
+  background: #5883ed;
+  background: -webkit-gradient(linear, right top, left top, color-stop(13%, rgba(88, 131, 237, 0.60548)), color-stop(30%, #8d81a0), color-stop(60%, #f2b007));
+  background: linear-gradient(270deg, rgba(88, 131, 237, 0.60548) 13%, #8d81a0 30%, #f2b007 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu3Color {
+  background: #0348f4;
+  background: linear-gradient(114deg, rgba(3, 72, 244, 0.849177) 13%, #606beb 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu4Color {
+  background: #027300;
+  background: linear-gradient(114deg, #027300 13%, #44f24f 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
 .title {
   color: yellow;
 }
@@ -189,17 +282,19 @@ a:visited {
   text-align: center;
 }
 
+.mainMenus .shadowPage {
+  -webkit-box-shadow: 1px 1px 15px grey;
+          box-shadow: 1px 1px 15px grey;
+}
+
 .mainMenus .content {
-  max-width: 600px;
-  height: 100%;
+  max-width: 650px;
+  font-size: 20px;
   margin: 20px auto 20px;
+  padding: 20px;
 }
 
-.mainMenus .content h3 {
-  text-align: center;
-}
-
-.mainMenus .content h4 {
+.mainMenus .content h3, .mainMenus .content h4, .mainMenus .content img {
   text-align: center;
 }
 
@@ -248,6 +343,10 @@ a:visited {
   background-color: #579c87;
 }
 
+.mentions > article {
+  text-align: justify;
+}
+
 /** style sticky sur footer **/
 .contactContent {
   display: -webkit-box;
@@ -257,5 +356,9 @@ a:visited {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+.titleContact {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */

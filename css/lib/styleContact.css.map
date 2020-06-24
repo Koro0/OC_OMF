@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,eAAe,CAAC;EACZ,OAAO,EAAE,IAAI;EACb,SAAS,EAAE,IAAI;EACf,eAAe,EAAE,YAAY;CAEhC;;AACD,AAAA,aAAa,CAAC;EACV,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "styleContact.scss"
+    ],
+    "names": [],
+    "file": "styleContact.css"
+}

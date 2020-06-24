@@ -15,16 +15,22 @@
         text-align: center;
         
     }
+    .shadowPage {
+        box-shadow: 1px 1px 15px grey;
+    }
     .content {
-        max-width: 600px;
-        height: 100%;
+        max-width: 650px;
+        font-size: 20px;
         margin: 20px auto 20px;
-        h3 {
+        padding: 20px;
+
+        .gradientPage1{
+            
+        }
+        h3 , h4 , img {
             text-align: center;
         }
-        h4 {
-            text-align: center;
-        }
+        
         .stepName {
             display: flex;
             justify-content: space-around;

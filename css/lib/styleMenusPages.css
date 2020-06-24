@@ -1,0 +1,58 @@
+.return a :visited {
+  color: yellow;
+}
+
+.return a :link {
+  color: yellow;
+}
+
+.mainMenus h2 {
+  text-align: center;
+}
+
+.mainMenus .shadowPage {
+  -webkit-box-shadow: 1px 1px 15px grey;
+          box-shadow: 1px 1px 15px grey;
+}
+
+.mainMenus .content {
+  max-width: 650px;
+  font-size: 20px;
+  margin: 20px auto 20px;
+  padding: 20px;
+}
+
+.mainMenus .content h3, .mainMenus .content h4, .mainMenus .content img {
+  text-align: center;
+}
+
+.mainMenus .content .stepName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 3px;
+}
+
+.mainMenus .content .stepName h4 {
+  text-align: center;
+  margin: auto;
+}
+
+.mainMenus .content .plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.mainMenus .content .plats .nomPlat {
+  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+/*# sourceMappingURL=styleMenusPages.css.map */

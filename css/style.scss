@@ -1,10 +1,5 @@
 
 
-html, body {
-    height: 100%;
-    width: 100%;
-    
-}
 header {
     text-align: center;
     padding: 10px;
@@ -40,7 +35,18 @@ main {
                 flex-direction: column;
                 text-align: center;
                 .shadow {
-                    box-shadow: 6px 5px 1px #a09b9b;
+                    box-shadow: 1px 1px 15px #a09b9b;
+                }
+                .carte {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    width: 400px;
+                    margin: 0 auto;
+                    img {
+                        width: 50px;
+                        margin: 0 auto;
+                    }
                 }
             }
         }
@@ -96,7 +102,7 @@ footer{
 @import "lib/styleMenus.scss";
 .title {
     color: yellow;
-    }
+}
 
 a:link {
     text-decoration: none;
@@ -108,6 +114,6 @@ a:visited {
 @import "lib/styleMenusPages.scss";
 /** Style pour les pages de s menus**/
 
-@import "lib/styleHook.scss";
+@import "lib/styleMentionHook.scss";
 /** style sticky sur footer **/
 @import "lib/styleContact.scss"

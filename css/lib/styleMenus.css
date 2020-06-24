@@ -1,0 +1,63 @@
+/**Couleur**/
+@import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+.menu1 {
+  background-color: #fcdfdb;
+  font-family: 'Devonshire', cursive;
+}
+
+.menu2 {
+  background-color: #fff5fe;
+  font-family: 'Merienda One', cursive;
+}
+
+.menu3 {
+  background-color: #f9f9f9;
+  font-family: 'Dancing Script', cursive;
+}
+
+.menu4 {
+  background-color: #e4e4e4;
+  font-family: 'Lemonada', cursive;
+}
+
+.menu1m {
+  font-family: 'Sriracha', cursive;
+}
+
+.menu2m {
+  font-family: 'Playfair Display', serif;
+}
+
+.titleHeader, .mentions {
+  font-family: 'Noto Serif', serif;
+}
+
+.menu1Color {
+  color: #3d1319;
+}
+
+.menu2Color {
+  background: #5883ed;
+  background: -webkit-gradient(linear, right top, left top, color-stop(13%, rgba(88, 131, 237, 0.60548)), color-stop(30%, #8d81a0), color-stop(60%, #f2b007));
+  background: linear-gradient(270deg, rgba(88, 131, 237, 0.60548) 13%, #8d81a0 30%, #f2b007 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu3Color {
+  background: #0348f4;
+  background: linear-gradient(114deg, rgba(3, 72, 244, 0.849177) 13%, #606beb 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.menu4Color {
+  background: #027300;
+  background: linear-gradient(114deg, #027300 13%, #44f24f 60%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+/*# sourceMappingURL=styleMenus.css.map */
