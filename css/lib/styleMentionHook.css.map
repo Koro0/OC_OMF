@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,AAAA,aAAa,CAAC;EACV,QAAQ,EAAE,MAAM;EAChB,MAAM,EAAE,CAAC;EACT,gBAAgB,EAAE,OAAuB;CAC5C;;AAED,AAAA,aAAa,CAAC;EACV,QAAQ,EAAE,MAAM;EAChB,GAAG,EAAE,CAAC;EACN,gBAAgB,EAAE,OAAuB;CAC5C;;AACD,AAAA,SAAS,GAAG,OAAO,CAAC;EAChB,UAAU,EAAE,OAAO;CACtB",
-    "sources": [
-        "styleMentionHook.scss"
-    ],
-    "names": [],
-    "file": "styleMentionHook.css"
-}

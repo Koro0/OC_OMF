@@ -6,15 +6,19 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
-header {
+#logo {
   text-align: center;
   padding: 10px;
   background-color: #579c87;
   height: 10%;
 }
 
-header h1 {
+#logo h1 {
   margin: 10px auto;
+  text-align: center;
+}
+
+header {
   text-align: center;
 }
 
@@ -125,7 +129,7 @@ main .home .menu1m {
   font-family: 'Sriracha', cursive;
 }
 
-main .home span.menu2Title {
+main .home .menu2m {
   font-family: 'Playfair Display', serif;
 }
 
@@ -169,6 +173,56 @@ main .home p {
   height: 5%;
   background-color: #579c87;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.last > div {
+  background-color: yellow;
+  border: 2px solid yellow;
+  border-radius: 50%;
+  margin: auto 2px;
+  display: inline-block;
+  -webkit-animation: 1.5s bounce infinite ease-in-out;
+          animation: 1.5s bounce infinite ease-in-out;
+  width: 0.5rem;
+  height: 0.5rem;
+}
+
+.last .dot {
+  -webkit-animation-delay: -0.45s;
+          animation-delay: -0.45s;
+}
+
+.last .dot1 {
+  -webkit-animation-delay: -0.30s;
+          animation-delay: -0.30s;
+}
+
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(0);
+            transform: scale(0);
+  }
+  40% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
 }
 
 footer {
@@ -224,7 +278,7 @@ footer nav .contact {
   font-family: 'Sriracha', cursive;
 }
 
-span.menu2Title {
+.menu2m {
   font-family: 'Playfair Display', serif;
 }
 
@@ -298,21 +352,30 @@ a:visited {
   text-align: center;
 }
 
-.mainMenus .content .stepName {
+.mainMenus .content section .stepName {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 3px;
+  margin: 5px;
+  margin-bottom: 10px;
 }
 
-.mainMenus .content .stepName h4 {
+.mainMenus .content section .stepName img {
+  min-width: auto;
+}
+
+.mainMenus .content section .stepName h4 {
   text-align: center;
   margin: auto;
 }
 
-.mainMenus .content .plats {
+.mainMenus .content section .blocPlat {
+  margin: auto 50px;
+}
+
+.mainMenus .content section .blocPlat .plats {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -321,7 +384,7 @@ a:visited {
           justify-content: flex-end;
 }
 
-.mainMenus .content .plats .nomPlat {
+.mainMenus .content section .blocPlat .plats .nomPlat {
   margin-left: auto;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;

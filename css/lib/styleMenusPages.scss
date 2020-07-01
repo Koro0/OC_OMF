@@ -24,33 +24,41 @@
         margin: 20px auto 20px;
         padding: 20px;
 
-        .gradientPage1{
-            
-        }
+        
         h3 , h4 , img {
             text-align: center;
         }
+        section {
+
         
-        .stepName {
-            display: flex;
-            justify-content: space-around;
-            margin: 3px;
-            
-            h4 {
-                text-align: center;
-                margin: auto;
+            .stepName {
+                display: flex;
+                justify-content: space-around;
+                margin: 5px;
+                margin-bottom: 10px;
+                img {
+                    min-width: auto;
+                }
+                h4 {
+                    text-align: center;
+                    margin: auto;
+                }
+            }
+
+            .blocPlat {
+                margin: auto 50px;
+                .plats {
+                    display: flex;
+                    justify-content: flex-end;
+        
+                    .nomPlat {
+                        margin-left: auto;
+                        flex-grow: 1;
+                    }
+                }
             }
         }
-
-        .plats {
-            display: flex;
-            justify-content: flex-end;
-
-            .nomPlat {
-                margin-left: auto;
-                flex-grow: 1;
-            }
-        }
+        
 
     }        
              
