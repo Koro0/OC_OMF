@@ -24,6 +24,9 @@
         margin: 20px auto 20px;
         padding: 20px;
 
+        header {
+            margin: 0;
+        }
         
         h3 , h4 , img {
             text-align: center;
@@ -58,8 +61,13 @@
                 }
             }
         }
+        footer {
         
-
+            text-align: center;
+            h4 {
+                margin: 0;
+                }
+            }
     }        
              
 }

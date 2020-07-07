@@ -1,152 +1,178 @@
+$breakpoints: (
+    mobile: 660px,
+    tablet: 830px,
+);
 
-
-#logo {
-    text-align: center;
-    padding: 10px;
-    background-color: rgba(87, 156, 135, 1.0);
-    height: 10%;
-    h1 {
-        margin: 10px auto;
+body {
+    min-width: 650px;
+    #logo {
+        text-align: center;
+        padding: 10px;
+        background-color: rgba(87, 156, 135, 1.0);
+        height: 10%;
+        margin: -1%;
+        h1 {
+            margin: 10px auto;
+            text-align: center;
+        }
+        
+    }
+    header {
         text-align: center;
     }
-    
-}
-header {
-    text-align: center;
-}
 
-main {
-    
-    .home {
-        display: flex;
-        flex-wrap: wrap;
-        height: 90%;
-        flex-direction: row;
+    main {
         
-        > .menus {
+        
+        .home {
             display: flex;
-            flex-basis: calc(50% - 40px);
-            justify-content: center;
-            flex-direction: column;
-            padding: 12px;
-            margin: 25px auto;
-            max-width: 40%;
-            
-            > .titleM {
+            flex-wrap: wrap;
+            height: 90%;
+            flex-direction: row;
+            margin: auto 15%;
+            @media screen and (max-width: map-get($breakpoints, tablet)) {
                 display: flex;
+                flex-wrap: wrap;
+                flex-direction: column;
+            }
+
+            > .menus {
+                display: flex;
+                flex-basis: calc(50% - 40px);
                 justify-content: center;
                 flex-direction: column;
-                text-align: center;
-                .shadow {
-                    box-shadow: 1px 1px 15px #a09b9b;
+                padding: 12px;
+                margin: 25px auto;
+                max-width: 40%;
+                @media screen and (max-width: map-get($breakpoints, tablet)) {
+                    max-width: 60%;
                 }
-                .carte {
+                
+                
+                > .titleM {
                     display: flex;
-                    flex-direction: column;
                     justify-content: center;
-                    width: 400px;
-                    margin: 0 auto;
-                    img {
-                        width: 50px;
+                    flex-direction: column;
+                    text-align: center;
+                    .shadow {
+                        box-shadow: 1px 1px 15px #a09b9b;
+                    }
+                    .carte {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        width: 400px;
                         margin: 0 auto;
+                        img {
+                            width: 50px;
+                            margin: 0 auto;
+                        }
                     }
                 }
             }
+            a :hover {
+                transform: scale(1.15);
+                transition-duration: 0.5s;
+            }
+            a > div {
+                height: 300px;
+                max-width: 250px;
+            
+            }
+            @import "lib/styleMenus.scss";
+            p {
+                margin: auto;
+            }
+            
         }
-        a :hover {
-            transform: scale(1.15);
-            transition-duration: 0.5s;
-        }
-        a > div {
-            height: 300px;
-            max-width: 250px;
-        
-        }
-        @import "lib/styleMenus.scss";
-        p {
-            margin: auto;
-        }
-        
     }
-}
 
-.last {
-    margin: auto;
-    width: 20%;
-    height: 5%;
-    background-color: rgba(87, 156, 135, 1.0);
-    text-align: center;
-    display: flex;
-    justify-content: center;
-    > div {
-        background-color: yellow;
-        border: 2px solid yellow;
-        border-radius: 50%;
-        margin: auto 2px;
-        display: inline-block;
-        animation: 1.5s bounce infinite ease-in-out;
-        width: 0.5rem;
-        height: 0.5rem;
-        
-    }
-    
-    .dot {
-        animation-delay: -0.45s;
-    }
-    .dot1 {
-        animation-delay: -0.30s;
-    }
-    
-    
-    @keyframes bounce{
-        0%{
-            transform: scale(0);
-        }
-        40%{
-            transform: scale(1);
-        }
-        
-    }
-}
-
-footer{
-    
-    text-align: justify;
-    position: sticky;
-    bottom: 0;
-    background-color: rgba(87, 156, 135, 1.0);
-    
-    nav {
+    .last {
+        margin: auto;
+        width: 20%;
+        border-radius: 100%;
+        background-color: rgba(87, 156, 135, 1.0);
+        text-align: center;
         display: flex;
-        flex-wrap: wrap;
+        justify-content: center;
+        @media screen and (max-width: map-get($breakpoints, tablet)) {
+            width: 25%;
+        }
+        > div {
+            background-color: yellow;
+            border: 2px solid yellow;
+            border-radius: 50%;
+            margin: auto 2px;
+            display: inline-block;
+            animation: 1.5s bounce infinite ease-in-out;
+            width: 0.5rem;
+            height: 0.5rem;
+            
+        }
         
-        justify-content: space-between;
-        padding: 20px;
+        .dot {
+            animation-delay: -0.45s;
+        }
+        .dot1 {
+            animation-delay: -0.30s;
+        }
         
-        .mention {
-                margin-left: 20px;
+        
+        @keyframes bounce{
+            0%{
+                transform: scale(0);
             }
-        .contact {
-                margin-right: 10px;
+            40%{
+                transform: scale(1);
             }
+            
+        }
     }
+
+    .footer{
+        
+        text-align: justify;
+        position: sticky;
+        bottom: 0;
+        background-color: rgba(87, 156, 135, 1.0);
+        
+        nav {
+            display: flex;
+            flex-wrap: wrap;
+            
+            justify-content: space-between;
+            padding: 20px;
+            
+            .mention {
+                    margin-left: 20px;
+                }
+            .contact {
+                    margin-right: 10px;
+                }
+        }
+    }
+
+    @import "lib/styleMenus.scss";
+    .title {
+        color: yellow;
+    }
+
+    a:link {
+        text-decoration: none;
+    }
+    a:visited {
+        text-decoration: none;
+    }
+
+    @import "lib/styleMenusPages.scss";
+    /** Style pour les pages de s menus**/
+
+    @import "lib/styleMentionHook.scss";
+    /** style sticky sur footer **/
+    @import "lib/styleContact.scss";
+    /** style page contact.html **/
 }
 
-@import "lib/styleMenus.scss";
-.title {
-    color: yellow;
-}
 
-a:link {
-    text-decoration: none;
-}
-a:visited {
-    text-decoration: none;
-}
 
-@import "lib/styleMenusPages.scss";
-/** Style pour les pages de s menus**/
 
-@import "lib/styleMentionHook.scss";
-/** style sticky sur footer **/
-@import "lib/styleContact.scss"

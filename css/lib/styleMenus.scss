@@ -8,6 +8,7 @@ $BGcolorMenu4: rgba(228, 228, 228, 1);
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
 .menu1 {
     background-color: $BGcolorMenu1;
     
@@ -60,6 +61,7 @@ $BGcolorMenu4: rgba(228, 228, 228, 1);
     background: linear-gradient(114deg, rgba(3,72,244,0.8491771708683473) 13%, rgba(96,107,235,1) 60%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+    
 }
 .menu4Color {
     background: rgb(2,115,0);

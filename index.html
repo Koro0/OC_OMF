@@ -7,46 +7,51 @@
         <link rel="stylesheet" href="css/style.css">
     </head>
     <body>
-        <header>
+        <header id="logo">
             <h1 class="title titleHeader">ohmyfood</h1>
         </header>
         <main>
-            <section class="home">
-                <article class="menus">
-                    <a class="titleM menu1Color" href="pageMenus/page1.html">
-                        <div class="carte menu1 shadow">
-                            <img src="img/note.png" alt="note musical">
-                            <h2>La note enchantée</h2>
-                            <div class="menu1m">MENU</div>
-                        </div>
-                    </a>
-                </article>
-                <article class="menus">
-                    <a class="titleM" href="pageMenus/page2.html">
-                        <div class="carte menu2 shadow">
-                            <h2 class="menu2Color">Le chic à la française</h2>
-                            <div class="menu2m">MENU</div>
-                        </div>
-                    </a>
-                </article>
-                <article class="menus">
+            <article class="home">
+                <section class="menus">
+                    <div class="titleM">
+                        <a class="menu1Color" href="pageMenus/page1.html">
+                            <div class="carte menu1 shadow">
+                                <img src="img/note.png" alt="note musical">
+                                <h2>La note enchantée</h2>
+                                <div class="menu1m">MENU</div>
+                            </div>
+                        </a>
+                    </div>                   
+                </section>
+                <section class="menus">
+                    <div class="titleM">
+                        <a href="pageMenus/page2.html">
+                            <div class="carte menu2 shadow">
+                                <h2 class="menu2Color">Le chic à la française</h2>
+                                <div class="menu2m">MENU</div>
+                            </div>
+                        </a>
+                    </div>
+                    
+                </section>
+                <section class="menus">
                     <a class="titleM" href="pageMenus/page3.html">
                         <div class="carte menu3 shadow">
                             <h2 class="menu3Color">Le délice des papilles</h2>
                                 <div>Menu</div>
                         </div>
                     </a>
-                </article>
-                <article class="menus">
+                </section>
+                <section class="menus">
                     <a class="titleM" href="pageMenus/page4.html">
                         <div class="carte menu4 shadow">
                             <h2 class="menu4Color">La pallette du goût</h2>
                             <div class="fontMenu">Menu</div>
                         </div>
                     </a>
-                </article>
+                </section>
 
-            </section>
+            </article>
             <aside class="last">
                 <h3 class="title">Prochainement</h3>
                 <div class="dot"></div> 
@@ -54,7 +59,7 @@
                 <div class="dot2"></div>
             </aside>
         </main>
-        <footer>
+        <footer class="footer">
             <nav>
                 <div class="mention">
                     <a class="title" href="/pageMenus/mention.html">Mentions Légales</a>
