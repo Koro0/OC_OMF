@@ -10,7 +10,8 @@
 }
 
 .mainMenus {
-    
+    margin: auto 10%;
+
     h2 {
         text-align: center;
         
@@ -20,8 +21,9 @@
     }
     .content {
         max-width: 650px;
-        font-size: 20px;
-        margin: 20px auto 20px;
+        font-size: 1.25rem;
+        margin-left: auto;
+        margin-right: auto;
         padding: 20px;
 
         header {
@@ -37,8 +39,8 @@
             .stepName {
                 display: flex;
                 justify-content: space-around;
-                margin: 5px;
-                margin-bottom: 10px;
+                margin: 0.313rem;
+                margin-bottom: 0.625rem;
                 img {
                     min-width: auto;
                 }
@@ -49,14 +51,15 @@
             }
 
             .blocPlat {
-                margin: auto 50px;
+                margin: auto 3.125;
                 .plats {
                     display: flex;
                     justify-content: flex-end;
-        
+                    font-size: 1.25rem;
                     .nomPlat {
                         margin-left: auto;
                         flex-grow: 1;
+                        font-size: 1.25rem;
                     }
                 }
             }

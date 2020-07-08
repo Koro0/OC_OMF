@@ -1,3 +1,6 @@
+/** font size for accessibility**/
+$font-size16px: 1rem;
+$font-size20px: 1.25rem;
 /**Couleur**/
 $BGcolorMenu1: rgba(252, 223, 219, 1);
 $BGcolorMenu2: rgba(255, 245, 254, 1);
@@ -35,9 +38,17 @@ $BGcolorMenu4: rgba(228, 228, 228, 1);
 
 .menu1m {
     font-family:  'Sriracha', cursive;
+    font-size: $font-size16px;
 }
 .menu2m {
     font-family: 'Playfair Display', serif;
+    font-size: $font-size16px;
+}
+.menu3m {
+    font-size: $font-size16px;
+}
+.menu4m {
+    font-size: $font-size16px;
 }
 .titleHeader , .mentions {
     font-family: 'Noto Serif', serif;

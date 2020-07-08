@@ -8,6 +8,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 body {
   min-width: 650px;
+  /** font size for accessibility**/
   /**Couleur**/
   /** Style pour les pages de s menus**/
   /** style sticky sur footer **/
@@ -43,10 +44,11 @@ body main .home {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: auto 15%;
+  /** font size for accessibility**/
   /**Couleur**/
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 660px) {
   body main .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -78,7 +80,7 @@ body main .home > .menus {
   max-width: 40%;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 660px) {
   body main .home > .menus {
     max-width: 60%;
   }
@@ -157,10 +159,20 @@ body main .home .menu4 {
 
 body main .home .menu1m {
   font-family: 'Sriracha', cursive;
+  font-size: 1rem;
 }
 
 body main .home .menu2m {
   font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+body main .home .menu3m {
+  font-size: 1rem;
+}
+
+body main .home .menu4m {
+  font-size: 1rem;
 }
 
 body main .home .titleHeader, body main .home .mentions {
@@ -211,7 +223,7 @@ body .last {
           justify-content: center;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: null) {
   body .last {
     width: 25%;
   }
@@ -311,10 +323,20 @@ body .menu4 {
 
 body .menu1m {
   font-family: 'Sriracha', cursive;
+  font-size: 1rem;
 }
 
 body .menu2m {
   font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+}
+
+body .menu3m {
+  font-size: 1rem;
+}
+
+body .menu4m {
+  font-size: 1rem;
 }
 
 body .titleHeader, body .mentions {
@@ -367,6 +389,10 @@ body .return a :link {
   color: yellow;
 }
 
+body .mainMenus {
+  margin: auto 10%;
+}
+
 body .mainMenus h2 {
   text-align: center;
 }
@@ -378,8 +404,9 @@ body .mainMenus .shadowPage {
 
 body .mainMenus .content {
   max-width: 650px;
-  font-size: 20px;
-  margin: 20px auto 20px;
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
   padding: 20px;
 }
 
@@ -397,8 +424,8 @@ body .mainMenus .content section .stepName {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  margin: 5px;
-  margin-bottom: 10px;
+  margin: 0.313rem;
+  margin-bottom: 0.625rem;
 }
 
 body .mainMenus .content section .stepName img {
@@ -411,7 +438,7 @@ body .mainMenus .content section .stepName h4 {
 }
 
 body .mainMenus .content section .blocPlat {
-  margin: auto 50px;
+  margin: auto 3.125;
 }
 
 body .mainMenus .content section .blocPlat .plats {
@@ -421,6 +448,7 @@ body .mainMenus .content section .blocPlat .plats {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  font-size: 1.25rem;
 }
 
 body .mainMenus .content section .blocPlat .plats .nomPlat {
@@ -428,6 +456,7 @@ body .mainMenus .content section .blocPlat .plats .nomPlat {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
+  font-size: 1.25rem;
 }
 
 body .mainMenus .content footer {
@@ -464,6 +493,16 @@ body .contactContent {
       flex-wrap: wrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
+}
+
+@media screen and (max-width: 660px) {
+  body .contactContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
 }
 
 body .titleContact {
