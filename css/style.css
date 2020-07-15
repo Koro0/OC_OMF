@@ -44,6 +44,7 @@ body main .home {
       -ms-flex-direction: row;
           flex-direction: row;
   margin: auto 15%;
+  margin-bottom: 5rem;
   /** font size for accessibility**/
   /**Couleur**/
 }
@@ -129,7 +130,7 @@ body main .home > .menus > .titleM h2 {
   font-size: 1.25rem;
 }
 
-body main .home a :hover {
+body main .home a > div :hover {
   -webkit-transform: scale(1.15);
           transform: scale(1.15);
   -webkit-transition-duration: 0.5s;
@@ -159,6 +160,7 @@ body main .home .menu3 {
 body main .home .menu4 {
   background-color: #e4e4e4;
   font-family: 'Lemonada', cursive;
+  font-style: italic;
 }
 
 body main .home .menu1m {
@@ -213,10 +215,11 @@ body main .home p {
   margin: auto;
 }
 
-body .last {
+body main .home .last {
   margin: auto;
+  min-width: 10rem;
   width: 20%;
-  border-radius: %;
+  border-radius: 19%;
   background-color: #579c87;
   text-align: center;
   display: -webkit-box;
@@ -228,12 +231,12 @@ body .last {
 }
 
 @media screen and (max-width: null) {
-  body .last {
+  body main .home .last {
     width: 25%;
   }
 }
 
-body .last > div {
+body main .home .last > div {
   background-color: yellow;
   border: 2px solid yellow;
   border-radius: 50%;
@@ -245,12 +248,12 @@ body .last > div {
   height: 0.5rem;
 }
 
-body .last .dot {
+body main .home .last .dot {
   -webkit-animation-delay: -0.45s;
           animation-delay: -0.45s;
 }
 
-body .last .dot1 {
+body main .home .last .dot1 {
   -webkit-animation-delay: -0.30s;
           animation-delay: -0.30s;
 }
@@ -431,6 +434,7 @@ body .menu3 {
 body .menu4 {
   background-color: #e4e4e4;
   font-family: 'Lemonada', cursive;
+  font-style: italic;
 }
 
 body .menu1m {
@@ -520,6 +524,7 @@ body .mainMenus .content {
   margin-left: auto;
   margin-right: auto;
   padding: 20px;
+  margin-bottom: 5rem;
 }
 
 body .mainMenus .content header {
@@ -547,6 +552,25 @@ body .mainMenus .content section .stepName img {
 body .mainMenus .content section .stepName h4 {
   text-align: center;
   margin: auto;
+}
+
+body .mainMenus .content section .stepName span.section1Color {
+  color: #c67412;
+}
+
+body .mainMenus .content section .stepName span.section2Color {
+  color: #a56799;
+}
+
+body .mainMenus .content section .stepName span.section3Color {
+  color: #6e4ccc;
+}
+
+body .mainMenus .content section .stepName .subline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000 0%, #000000 4px, transparent 5px);
+  background-size: 0 100%;
 }
 
 body .mainMenus .content section .blocPlat {

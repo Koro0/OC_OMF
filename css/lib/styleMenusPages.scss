@@ -1,3 +1,8 @@
+$SectionColorm: #000000;
+$Section1Colorm2: rgba(198,116,18,1);
+$Section2Colorm2: rgba(165,103,153,1);
+$Section3Colorm2: rgba(110,76,204,1);
+
 .return {
     a {
         :visited {
@@ -26,7 +31,7 @@
         margin-left: auto;
         margin-right: auto;
         padding: 20px;
-
+        margin-bottom: 5rem;
         header {
             margin: 0;
         }
@@ -34,14 +39,16 @@
         h3 , h4 , img {
             text-align: center;
         }
+        
         section {
 
-        
+            
             .stepName {
                 display: flex;
                 justify-content: space-around;
                 margin: 0.313rem;
                 margin-bottom: 0.625rem;
+                
                 img {
                     min-width: auto;
                 }
@@ -49,11 +56,28 @@
                     text-align: center;
                     margin: auto;
                 }
+                span.section1Color {
+                    color: $Section1Colorm2;
+                }
+                span.section2Color {
+                    color: $Section2Colorm2;
+                }
+                span.section3Color {
+                    color: $Section3Colorm2;
+                }
+                .underline {
+                    display: inline-block;
+                    color: inherit;
+                    text-decoration: none;
+                    background: linear-gradient(to top,transparent 10%,#000000 10.1%, #000000 15%, transparent 20%) no-repeat;
+                    background-size: 0 100%;
+                    transition: background-size 0.3s;
+                }
+                .underline:hover {
+                    background-size: 100% 100%;
+                }
+            
             }
-            .stepName:hover {
-                
-            }
-
             .blocPlat {
                 margin: auto 3.125;
                 .plats {
