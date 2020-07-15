@@ -5,33 +5,34 @@ $font-size20px: 1.25rem;
 $BGcolorMenu1: rgba(252, 223, 219, 1);
 $BGcolorMenu2: rgba(255, 245, 254, 1);
 $BGcolorMenu3: rgba(249, 249, 249, 1);
-$BGcolorMenu4: rgba(228, 228, 228, 1);
+$BGcolorMenu4: rgba(253, 255, 253, 1);
 
 @import url('https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
 
 .menu1 {
     background-color: $BGcolorMenu1;
-    
+    font-size: $font-size16px;
     font-family: 'Devonshire', cursive;
 }
 
 .menu2 {
-    
+    font-size: $font-size16px;
     background-color: $BGcolorMenu2;
     font-family: 'Merienda One', cursive;
 }
 
 .menu3 {
-    
+    font-size: $font-size16px;
     background-color: $BGcolorMenu3;
     font-family: 'Dancing Script', cursive;
 }
 
 .menu4 {
-    
+    font-size: $font-size16px;
     background-color: $BGcolorMenu4;
     font-family: 'Lemonada', cursive;
     font-style: italic;
@@ -39,23 +40,23 @@ $BGcolorMenu4: rgba(228, 228, 228, 1);
 
 .menu1m {
     font-family:  'Sriracha', cursive;
-    font-size: $font-size16px;
+    
 }
 .menu2m {
     font-family: 'Playfair Display', serif;
-    font-size: $font-size16px;
+    
 }
 .menu3m {
-    font-size: $font-size16px;
+    font-family: 'Caveat', cursive;
 }
 .menu4m {
-    font-size: $font-size16px;
+    font-family: 'Caveat', cursive;
 }
 .titleHeader , .mentions {
     font-family: 'Noto Serif', serif;
 }
 .fontMenu {
-    
+    font-family: 'Caveat', cursive;
 }
 .menu1Color{
     color: rgba(61, 19, 25, 1);
@@ -69,8 +70,8 @@ $BGcolorMenu4: rgba(228, 228, 228, 1);
 }
 .menu3Color {
     
-    background: rgb(3,72,244);
-    background: linear-gradient(114deg, rgba(3,72,244,0.8491771708683473) 13%, rgba(96,107,235,1) 60%);
+    background: rgb(0,34,219);
+    background: linear-gradient(82deg, rgba(0,34,219,1) 35%, rgba(8,137,251,1) 63%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
     

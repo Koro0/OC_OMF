@@ -2,6 +2,12 @@ $SectionColorm: #000000;
 $Section1Colorm2: rgba(198,116,18,1);
 $Section2Colorm2: rgba(165,103,153,1);
 $Section3Colorm2: rgba(110,76,204,1);
+$m1colorFont: rgba(61, 19, 25, 1);
+$m3colorFont: rgb(0,34,219);
+$m2colorFontS1: rgba(198,116,18,1);
+$m2colorFontS2: rgba(165,103,153,1);
+$m2colorFontS3: rgba(110,76,204,1);
+$m4colorFont: rgb(2,115,0);
 
 .return {
     a {
@@ -58,28 +64,69 @@ $Section3Colorm2: rgba(110,76,204,1);
                 }
                 span.section1Color {
                     color: $Section1Colorm2;
+                    .underline {
+                    
+                        color: inherit;
+                        text-decoration: none;
+                        background: linear-gradient(to top,transparent 10%,$m2colorFontS1 10.1%, $m2colorFontS1 15%, transparent 20%) no-repeat;
+                        background-size: 0 100%;
+                        transition: background-size 0.3s;
+                    }
                 }
                 span.section2Color {
                     color: $Section2Colorm2;
+                    .underline {
+                    
+                        color: inherit;
+                        text-decoration: none;
+                        background: linear-gradient(to top,transparent 10%,$m2colorFontS2 10.1%, $m2colorFontS2 15%, transparent 20%) no-repeat;
+                        background-size: 0 100%;
+                        transition: background-size 0.3s;
+                    }
                 }
                 span.section3Color {
                     color: $Section3Colorm2;
+                    .underline {
+                    
+                        color: inherit;
+                        text-decoration: none;
+                        background: linear-gradient(to top,transparent 10%,$m2colorFontS3 10.1%, $m2colorFontS3 15%, transparent 20%) no-repeat;
+                        background-size: 0 100%;
+                        transition: background-size 0.3s;
+                    }
                 }
-                .underline {
-                    display: inline-block;
+                .menu1Color .underline {
+                    
                     color: inherit;
                     text-decoration: none;
-                    background: linear-gradient(to top,transparent 10%,#000000 10.1%, #000000 15%, transparent 20%) no-repeat;
+                    background: linear-gradient(to top,transparent 10%,$m1colorFont 10.1%, $m1colorFont 15%, transparent 20%) no-repeat;
                     background-size: 0 100%;
                     transition: background-size 0.3s;
                 }
+                .menu3Color .underline {
+                    
+                    color: inherit;
+                    text-decoration: none;
+                    background: linear-gradient(to top,transparent 10%,$m3colorFont 10.1%, $m3colorFont 15%, transparent 20%) no-repeat;
+                    background-size: 0 100%;
+                    transition: background-size 0.3s;
+                }
+                .menu4Color .underline {
+                    
+                    color: inherit;
+                    text-decoration: none;
+                    background: linear-gradient(to top,transparent 10%,$m4colorFont 10.1%, $m4colorFont 15%, transparent 20%) no-repeat;
+                    background-size: 0 100%;
+                    transition: background-size 0.3s;
+                }
+                
                 .underline:hover {
                     background-size: 100% 100%;
                 }
             
             }
             .blocPlat {
-                margin: auto 3.125;
+                margin: 1.5rem 3.125rem;
                 .plats {
                     display: flex;
                     justify-content: flex-end;

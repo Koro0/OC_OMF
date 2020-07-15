@@ -2,17 +2,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
 body {
   min-width: 650px;
   /** font size for accessibility**/
   /**Couleur**/
   /** Style pour les pages de s menus**/
   /** style sticky sur footer **/
-  /** style page contact.html **/
 }
 
 body #logo {
@@ -144,45 +145,51 @@ body main .home a > div {
 
 body main .home .menu1 {
   background-color: #fcdfdb;
+  font-size: 1rem;
   font-family: 'Devonshire', cursive;
 }
 
 body main .home .menu2 {
+  font-size: 1rem;
   background-color: #fff5fe;
   font-family: 'Merienda One', cursive;
 }
 
 body main .home .menu3 {
+  font-size: 1rem;
   background-color: #f9f9f9;
   font-family: 'Dancing Script', cursive;
 }
 
 body main .home .menu4 {
-  background-color: #e4e4e4;
+  font-size: 1rem;
+  background-color: #fdfffd;
   font-family: 'Lemonada', cursive;
   font-style: italic;
 }
 
 body main .home .menu1m {
   font-family: 'Sriracha', cursive;
-  font-size: 1rem;
 }
 
 body main .home .menu2m {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
 }
 
 body main .home .menu3m {
-  font-size: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 body main .home .menu4m {
-  font-size: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 body main .home .titleHeader, body main .home .mentions {
   font-family: 'Noto Serif', serif;
+}
+
+body main .home .fontMenu {
+  font-family: 'Caveat', cursive;
 }
 
 body main .home .menu1Color {
@@ -198,8 +205,8 @@ body main .home .menu2Color {
 }
 
 body main .home .menu3Color {
-  background: #0348f4;
-  background: linear-gradient(114deg, rgba(3, 72, 244, 0.849177) 13%, #606beb 60%);
+  background: #0022db;
+  background: linear-gradient(82deg, #0022db 35%, #0889fb 63%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -219,7 +226,7 @@ body main .home .last {
   margin: auto;
   min-width: 10rem;
   width: 20%;
-  border-radius: 19%;
+  border-radius: 1rem;
   background-color: #579c87;
   text-align: center;
   display: -webkit-box;
@@ -418,45 +425,51 @@ body .footer nav .contact:hover {
 
 body .menu1 {
   background-color: #fcdfdb;
+  font-size: 1rem;
   font-family: 'Devonshire', cursive;
 }
 
 body .menu2 {
+  font-size: 1rem;
   background-color: #fff5fe;
   font-family: 'Merienda One', cursive;
 }
 
 body .menu3 {
+  font-size: 1rem;
   background-color: #f9f9f9;
   font-family: 'Dancing Script', cursive;
 }
 
 body .menu4 {
-  background-color: #e4e4e4;
+  font-size: 1rem;
+  background-color: #fdfffd;
   font-family: 'Lemonada', cursive;
   font-style: italic;
 }
 
 body .menu1m {
   font-family: 'Sriracha', cursive;
-  font-size: 1rem;
 }
 
 body .menu2m {
   font-family: 'Playfair Display', serif;
-  font-size: 1rem;
 }
 
 body .menu3m {
-  font-size: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 body .menu4m {
-  font-size: 1rem;
+  font-family: 'Caveat', cursive;
 }
 
 body .titleHeader, body .mentions {
   font-family: 'Noto Serif', serif;
+}
+
+body .fontMenu {
+  font-family: 'Caveat', cursive;
 }
 
 body .menu1Color {
@@ -472,8 +485,8 @@ body .menu2Color {
 }
 
 body .menu3Color {
-  background: #0348f4;
-  background: linear-gradient(114deg, rgba(3, 72, 244, 0.849177) 13%, #606beb 60%);
+  background: #0022db;
+  background: linear-gradient(82deg, #0022db 35%, #0889fb 63%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -558,23 +571,80 @@ body .mainMenus .content section .stepName span.section1Color {
   color: #c67412;
 }
 
+body .mainMenus .content section .stepName span.section1Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #c67412), color-stop(15%, #c67412), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #c67412 10.1%, #c67412 15%, transparent 20%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
 body .mainMenus .content section .stepName span.section2Color {
   color: #a56799;
+}
+
+body .mainMenus .content section .stepName span.section2Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #a56799), color-stop(15%, #a56799), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #a56799 10.1%, #a56799 15%, transparent 20%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
 }
 
 body .mainMenus .content section .stepName span.section3Color {
   color: #6e4ccc;
 }
 
-body .mainMenus .content section .stepName .subline {
+body .mainMenus .content section .stepName span.section3Color .underline {
   color: inherit;
   text-decoration: none;
-  background: linear-gradient(to top, #000000 0%, #000000 4px, transparent 5px);
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #6e4ccc), color-stop(15%, #6e4ccc), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #6e4ccc 10.1%, #6e4ccc 15%, transparent 20%) no-repeat;
   background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName .menu1Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #3d1319), color-stop(15%, #3d1319), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #3d1319 10.1%, #3d1319 15%, transparent 20%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName .menu3Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #0022db), color-stop(15%, #0022db), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #0022db 10.1%, #0022db 15%, transparent 20%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName .menu4Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #027300), color-stop(15%, #027300), color-stop(20%, transparent)) no-repeat;
+  background: linear-gradient(to top, transparent 10%, #027300 10.1%, #027300 15%, transparent 20%) no-repeat;
+  background-size: 0 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName .underline:hover {
+  background-size: 100% 100%;
 }
 
 body .mainMenus .content section .blocPlat {
-  margin: auto 3.125;
+  margin: 1.5rem 3.125rem;
 }
 
 body .mainMenus .content section .blocPlat .plats {
@@ -619,29 +689,5 @@ body .stickyHeader {
 
 body .mentions > article {
   text-align: justify;
-}
-
-body .contactContent {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
-@media screen and (max-width: 660px) {
-  body .contactContent {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-  }
-}
-
-body .titleContact {
-  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
