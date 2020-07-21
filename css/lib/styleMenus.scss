@@ -12,6 +12,7 @@ $BGcolorMenu4: rgba(253, 255, 253, 1);
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap');
 
 .menu1 {
     background-color: $BGcolorMenu1;
@@ -43,14 +44,15 @@ $BGcolorMenu4: rgba(253, 255, 253, 1);
     
 }
 .menu2m {
-    font-family: 'Playfair Display', serif;
-    
+    font-family: 'EB Garamond', serif
 }
 .menu3m {
     font-family: 'Caveat', cursive;
+    font-size: 20px;
 }
 .menu4m {
     font-family: 'Caveat', cursive;
+    font-size: 20px;
 }
 .titleHeader , .mentions {
     font-family: 'Noto Serif', serif;

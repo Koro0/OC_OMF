@@ -1,5 +1,5 @@
 $breakpoints: (
-    mobile: 660px,
+    mobile: 850px,
 );
 
 body {
@@ -96,7 +96,7 @@ body {
                 text-align: center;
                 display: flex;
                 justify-content: center;
-                @media screen and (max-width: map-get($breakpoints, tablet)) {
+                @media screen and (max-width: map-get($breakpoints, mobile)) {
                     width: 25%;
                 }
                 > div {

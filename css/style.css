@@ -3,11 +3,13 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Croissant+One&family=Dancing+Script&family=Devonshire&family=Kaushan+Script&family=Noto+Serif&family=Sriracha&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&family=Lemonada:wght@600&family=Merienda+One&family=Pacifico&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Caveat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@500&display=swap");
 body {
   min-width: 650px;
   /** font size for accessibility**/
@@ -50,7 +52,7 @@ body main .home {
   /**Couleur**/
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 850px) {
   body main .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -82,7 +84,7 @@ body main .home > .menus {
   max-width: 40%;
 }
 
-@media screen and (max-width: 660px) {
+@media screen and (max-width: 850px) {
   body main .home > .menus {
     max-width: 60%;
   }
@@ -173,15 +175,17 @@ body main .home .menu1m {
 }
 
 body main .home .menu2m {
-  font-family: 'Playfair Display', serif;
+  font-family: 'EB Garamond', serif;
 }
 
 body main .home .menu3m {
   font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
 
 body main .home .menu4m {
   font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
 
 body main .home .titleHeader, body main .home .mentions {
@@ -237,7 +241,7 @@ body main .home .last {
           justify-content: center;
 }
 
-@media screen and (max-width: null) {
+@media screen and (max-width: 850px) {
   body main .home .last {
     width: 25%;
   }
@@ -453,15 +457,17 @@ body .menu1m {
 }
 
 body .menu2m {
-  font-family: 'Playfair Display', serif;
+  font-family: 'EB Garamond', serif;
 }
 
 body .menu3m {
   font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
 
 body .menu4m {
   font-family: 'Caveat', cursive;
+  font-size: 20px;
 }
 
 body .titleHeader, body .mentions {
@@ -556,6 +562,7 @@ body .mainMenus .content section .stepName {
       justify-content: space-around;
   margin: 0.313rem;
   margin-bottom: 0.625rem;
+  width: 3rem;
 }
 
 body .mainMenus .content section .stepName img {
@@ -571,76 +578,39 @@ body .mainMenus .content section .stepName span.section1Color {
   color: #c67412;
 }
 
-body .mainMenus .content section .stepName span.section1Color .underline {
-  color: inherit;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #c67412), color-stop(15%, #c67412), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #c67412 10.1%, #c67412 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
-}
-
 body .mainMenus .content section .stepName span.section2Color {
   color: #a56799;
-}
-
-body .mainMenus .content section .stepName span.section2Color .underline {
-  color: inherit;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #a56799), color-stop(15%, #a56799), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #a56799 10.1%, #a56799 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
 }
 
 body .mainMenus .content section .stepName span.section3Color {
   color: #6e4ccc;
 }
 
-body .mainMenus .content section .stepName span.section3Color .underline {
-  color: inherit;
+body .mainMenus .content section .stepName .underline:before, body .mainMenus .content section .stepName .underline:after {
+  content: "";
   text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #6e4ccc), color-stop(15%, #6e4ccc), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #6e4ccc 10.1%, #6e4ccc 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  background-color: #000000;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
 }
 
-body .mainMenus .content section .stepName .menu1Color .underline {
-  color: inherit;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #3d1319), color-stop(15%, #3d1319), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #3d1319 10.1%, #3d1319 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
+body .mainMenus .content section .stepName .underline.underline-1::before, body .mainMenus .content section .stepName .underline.underline-1:after {
+  left: 0;
 }
 
-body .mainMenus .content section .stepName .menu3Color .underline {
-  color: inherit;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #0022db), color-stop(15%, #0022db), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #0022db 10.1%, #0022db 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
+body .mainMenus .content section .stepName:hover {
+  cursor: pointer;
 }
 
-body .mainMenus .content section .stepName .menu4Color .underline {
-  color: inherit;
-  text-decoration: none;
-  background: -webkit-gradient(linear, left bottom, left top, color-stop(10%, transparent), color-stop(10.1%, #027300), color-stop(15%, #027300), color-stop(20%, transparent)) no-repeat;
-  background: linear-gradient(to top, transparent 10%, #027300 10.1%, #027300 15%, transparent 20%) no-repeat;
-  background-size: 0 100%;
-  -webkit-transition: background-size 0.3s;
-  transition: background-size 0.3s;
-}
-
-body .mainMenus .content section .stepName .underline:hover {
-  background-size: 100% 100%;
+body .mainMenus .content section .stepName:hover .underline:before, body .mainMenus .content section .stepName:hover .underline:after {
+  width: 100%;
+  opacity: 1;
 }
 
 body .mainMenus .content section .blocPlat {

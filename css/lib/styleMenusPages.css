@@ -1,0 +1,127 @@
+.return a :visited {
+  color: yellow;
+}
+
+.return a :link {
+  color: yellow;
+}
+
+.mainMenus {
+  margin: auto 10%;
+}
+
+.mainMenus h2 {
+  text-align: center;
+}
+
+.mainMenus .shadowPage {
+  -webkit-box-shadow: 1px 1px 15px grey;
+          box-shadow: 1px 1px 15px grey;
+}
+
+.mainMenus .content {
+  max-width: 650px;
+  font-size: 1.25rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px;
+  margin-bottom: 5rem;
+}
+
+.mainMenus .content header {
+  margin: 0;
+}
+
+.mainMenus .content h3, .mainMenus .content h4, .mainMenus .content img {
+  text-align: center;
+}
+
+.mainMenus .content section .stepName {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin: 0.313rem;
+  margin-bottom: 0.625rem;
+  width: 3rem;
+}
+
+.mainMenus .content section .stepName img {
+  min-width: auto;
+}
+
+.mainMenus .content section .stepName h4 {
+  text-align: center;
+  margin: auto;
+}
+
+.mainMenus .content section .stepName span.section1Color {
+  color: #c67412;
+}
+
+.mainMenus .content section .stepName span.section2Color {
+  color: #a56799;
+}
+
+.mainMenus .content section .stepName span.section3Color {
+  color: #6e4ccc;
+}
+
+.mainMenus .content section .stepName .underline:before, .mainMenus .content section .stepName .underline:after {
+  content: "";
+  text-decoration: none;
+  position: absolute;
+  width: 0px;
+  height: 5px;
+  background-color: #000000;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  -webkit-transition-duration: 0.75s;
+          transition-duration: 0.75s;
+  opacity: 0;
+}
+
+.mainMenus .content section .stepName .underline.underline-1::before, .mainMenus .content section .stepName .underline.underline-1:after {
+  left: 0;
+}
+
+.mainMenus .content section .stepName:hover {
+  cursor: pointer;
+}
+
+.mainMenus .content section .stepName:hover .underline:before, .mainMenus .content section .stepName:hover .underline:after {
+  width: 100%;
+  opacity: 1;
+}
+
+.mainMenus .content section .blocPlat {
+  margin: 1.5rem 3.125rem;
+}
+
+.mainMenus .content section .blocPlat .plats {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  font-size: 1.25rem;
+}
+
+.mainMenus .content section .blocPlat .plats .nomPlat {
+  margin-left: auto;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  font-size: 1.25rem;
+}
+
+.mainMenus .content footer {
+  text-align: center;
+}
+
+.mainMenus .content footer h4 {
+  margin: 0;
+}
+/*# sourceMappingURL=styleMenusPages.css.map */
