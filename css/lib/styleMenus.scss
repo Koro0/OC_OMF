@@ -44,15 +44,19 @@ $BGcolorMenu4: rgba(253, 255, 253, 1);
     
 }
 .menu2m {
-    font-family: 'EB Garamond', serif
+    font-family: 'EB Garamond', serif;
+    color: rgb(215,131,52);
+
 }
 .menu3m {
     font-family: 'Caveat', cursive;
     font-size: 20px;
+    color: rgb(0,34,219);
 }
 .menu4m {
     font-family: 'Caveat', cursive;
     font-size: 20px;
+    color: rgb(2,115,0);
 }
 .titleHeader , .mentions {
     font-family: 'Noto Serif', serif;
@@ -65,8 +69,8 @@ $BGcolorMenu4: rgba(253, 255, 253, 1);
 }
 .menu2Color {
     
-    background: rgb(88,131,237);
-    background: linear-gradient(270deg, rgba(88,131,237,0.6054796918767507) 13%, rgba(141,129,160,1) 30%, rgba(242,176,7,1) 60%);
+    background: rgb(215,131,52);
+background: linear-gradient(172deg, #d78334 38%, #8f5aff 71%);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
 }

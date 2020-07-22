@@ -1,13 +1,4 @@
-$SectionColorm: #000000;
-$Section1Colorm2: rgba(198,116,18,1);
-$Section2Colorm2: rgba(165,103,153,1);
-$Section3Colorm2: rgba(110,76,204,1);
-$m1colorFont: rgba(61, 19, 25, 1);
-$m3colorFont: rgb(0,34,219);
-$m2colorFontS1: rgba(198,116,18,1);
-$m2colorFontS2: rgba(165,103,153,1);
-$m2colorFontS3: rgba(110,76,204,1);
-$m4colorFont: rgb(2,115,0);
+
 
 .return {
     a {
@@ -22,7 +13,9 @@ $m4colorFont: rgb(2,115,0);
 
 .mainMenus {
     margin: auto 10%;
-
+    @media screen and (max-width: 500px) {
+        margin: auto 1%;
+    }
     h2 {
         text-align: center;
     }
@@ -43,7 +36,12 @@ $m4colorFont: rgb(2,115,0);
         h3 , h4 , img {
             text-align: center;
         }
-        
+        @media screen and (max-width: 650px) {
+            margin-left: 0;
+            margin-right: 0;
+            font-size: 1.75rem;
+
+        }
         section {
 
             
@@ -52,62 +50,17 @@ $m4colorFont: rgb(2,115,0);
                 justify-content: space-around;
                 margin: 0.313rem;
                 margin-bottom: 0.625rem;
-                width: 3rem;
+                
                 
                 img {
-                    min-width: auto;
+                    min-width: 100px;
                 }
                 h4 {
                     text-align: center;
                     margin: auto;
                 }
-                span.section1Color {
-                    color: $Section1Colorm2;
-                    
-                }
-                span.section2Color {
-                    color: $Section2Colorm2;
-                    
-                }
-                span.section3Color {
-                    color: $Section3Colorm2;
-                    
-                }
-                
-                .underline{
-
-                    &:before, 
-                    &:after {
-                    content: "";
-                    text-decoration: none;
-                    position: absolute;
-                    width: 0px;
-                    height: 5px;
-                    background-color: #000000;
-                    transition: all 0.2s ease-in-out;
-                    transition-duration: 0.75s;
-                    opacity: 0;
-                    }
-
-                    &.underline-1 {
-                        &::before, &:after {
-                            left: 0;
-                        }
-                        
-                    }
-                        
-                }
-                &:hover {
-                    cursor: pointer;
-                        .underline{
-                            &:before,
-                            &:after {
-                                width: 100%;
-                                opacity: 1;
-                            }
-                        }
-            
-                }
+                @import "styleUnderlineAnimation.scss";
+                //* effet souligner *// 
             }           
             .blocPlat {
                 margin: 1.5rem 3.125rem;
@@ -115,11 +68,19 @@ $m4colorFont: rgb(2,115,0);
                     display: flex;
                     justify-content: flex-end;
                     font-size: 1.25rem;
+                    margin-bottom: 0.5rem;
                     .nomPlat {
                         margin-left: auto;
                         flex-grow: 1;
-                        font-size: 1.25rem;
+                        
                     }
+                    @media screen and (max-width: 650px) {
+                        font-size: 1.75rem;
+                    }
+                }
+                @media screen and (max-width: 650px) {
+                    margin: 0.5rem 0.75rem;
+                    
                 }
             }
         }

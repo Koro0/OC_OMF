@@ -18,6 +18,12 @@ body {
   /** style sticky sur footer **/
 }
 
+@media screen and (max-width: 649px) {
+  body {
+    min-width: 300px;
+  }
+}
+
 body #logo {
   text-align: center;
   padding: 10px;
@@ -29,6 +35,12 @@ body #logo {
 body #logo h1 {
   margin: 10px auto;
   text-align: center;
+}
+
+@media screen and (max-width: 650px) {
+  body #logo h1 {
+    font-size: 3rem;
+  }
 }
 
 body header {
@@ -46,13 +58,13 @@ body main .home {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  margin: auto 15%;
+  margin: auto 5%;
   margin-bottom: 5rem;
   /** font size for accessibility**/
   /**Couleur**/
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
   body main .home {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -79,12 +91,12 @@ body main .home > .menus {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 12px;
-  margin: 25px auto;
+  padding: 5%;
+  margin: 5% auto;
   max-width: 40%;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
   body main .home > .menus {
     max-width: 60%;
   }
@@ -129,7 +141,11 @@ body main .home > .menus > .titleM .carte img {
   margin: 0 auto;
 }
 
-body main .home > .menus > .titleM h2 {
+body main .home > .menus > .titleM .carte h2 {
+  font-size: 1.875rem;
+}
+
+body main .home > .menus > .titleM .carte p {
   font-size: 1.25rem;
 }
 
@@ -176,16 +192,19 @@ body main .home .menu1m {
 
 body main .home .menu2m {
   font-family: 'EB Garamond', serif;
+  color: #d78334;
 }
 
 body main .home .menu3m {
   font-family: 'Caveat', cursive;
   font-size: 20px;
+  color: #0022db;
 }
 
 body main .home .menu4m {
   font-family: 'Caveat', cursive;
   font-size: 20px;
+  color: #027300;
 }
 
 body main .home .titleHeader, body main .home .mentions {
@@ -201,9 +220,8 @@ body main .home .menu1Color {
 }
 
 body main .home .menu2Color {
-  background: #5883ed;
-  background: -webkit-gradient(linear, right top, left top, color-stop(13%, rgba(88, 131, 237, 0.60548)), color-stop(30%, #8d81a0), color-stop(60%, #f2b007));
-  background: linear-gradient(270deg, rgba(88, 131, 237, 0.60548) 13%, #8d81a0 30%, #f2b007 60%);
+  background: #d78334;
+  background: linear-gradient(172deg, #d78334 38%, #8f5aff 71%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -229,7 +247,7 @@ body main .home p {
 body main .home .last {
   margin: auto;
   min-width: 10rem;
-  width: 20%;
+  width: 50%;
   border-radius: 1rem;
   background-color: #579c87;
   text-align: center;
@@ -241,16 +259,16 @@ body main .home .last {
           justify-content: center;
 }
 
-@media screen and (max-width: 850px) {
+@media screen and (max-width: 650px) {
   body main .home .last {
-    width: 25%;
+    width: 60%;
+    margin-bottom: 5rem;
   }
 }
 
-body main .home .last > div {
-  background-color: yellow;
-  border: 2px solid yellow;
-  border-radius: 50%;
+body main .home .last .dot {
+  background-color: #579c87;
+  color: yellow;
   margin: auto 2px;
   display: inline-block;
   -webkit-animation: 1.5s bounce infinite ease-in-out;
@@ -259,35 +277,37 @@ body main .home .last > div {
   height: 0.5rem;
 }
 
-body main .home .last .dot {
+body main .home .last span.dot1 {
   -webkit-animation-delay: -0.45s;
           animation-delay: -0.45s;
 }
 
-body main .home .last .dot1 {
+body main .home .last span.dot2 {
   -webkit-animation-delay: -0.30s;
           animation-delay: -0.30s;
 }
 
 @-webkit-keyframes bounce {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
-  40% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
 @keyframes bounce {
   0% {
-    -webkit-transform: scale(0);
-            transform: scale(0);
+    opacity: 0;
   }
-  40% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
   }
 }
 
@@ -297,6 +317,12 @@ body .footer {
   width: 100%;
   bottom: 0;
   background-color: #579c87;
+}
+
+@media screen and (max-width: 650px) {
+  body .footer {
+    font-size: 1.25rem;
+  }
 }
 
 body .footer nav {
@@ -458,16 +484,19 @@ body .menu1m {
 
 body .menu2m {
   font-family: 'EB Garamond', serif;
+  color: #d78334;
 }
 
 body .menu3m {
   font-family: 'Caveat', cursive;
   font-size: 20px;
+  color: #0022db;
 }
 
 body .menu4m {
   font-family: 'Caveat', cursive;
   font-size: 20px;
+  color: #027300;
 }
 
 body .titleHeader, body .mentions {
@@ -483,9 +512,8 @@ body .menu1Color {
 }
 
 body .menu2Color {
-  background: #5883ed;
-  background: -webkit-gradient(linear, right top, left top, color-stop(13%, rgba(88, 131, 237, 0.60548)), color-stop(30%, #8d81a0), color-stop(60%, #f2b007));
-  background: linear-gradient(270deg, rgba(88, 131, 237, 0.60548) 13%, #8d81a0 30%, #f2b007 60%);
+  background: #d78334;
+  background: linear-gradient(172deg, #d78334 38%, #8f5aff 71%);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -528,6 +556,12 @@ body .mainMenus {
   margin: auto 10%;
 }
 
+@media screen and (max-width: 500px) {
+  body .mainMenus {
+    margin: auto 1%;
+  }
+}
+
 body .mainMenus h2 {
   text-align: center;
 }
@@ -554,6 +588,14 @@ body .mainMenus .content h3, body .mainMenus .content h4, body .mainMenus .conte
   text-align: center;
 }
 
+@media screen and (max-width: 650px) {
+  body .mainMenus .content {
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 1.75rem;
+  }
+}
+
 body .mainMenus .content section .stepName {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -562,11 +604,10 @@ body .mainMenus .content section .stepName {
       justify-content: space-around;
   margin: 0.313rem;
   margin-bottom: 0.625rem;
-  width: 3rem;
 }
 
 body .mainMenus .content section .stepName img {
-  min-width: auto;
+  min-width: 100px;
 }
 
 body .mainMenus .content section .stepName h4 {
@@ -578,39 +619,64 @@ body .mainMenus .content section .stepName span.section1Color {
   color: #c67412;
 }
 
+body .mainMenus .content section .stepName span.section1Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName span.section1Color .underline:hover {
+  background-size: 100% 100%;
+}
+
 body .mainMenus .content section .stepName span.section2Color {
   color: #a56799;
+}
+
+body .mainMenus .content section .stepName span.section2Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+body .mainMenus .content section .stepName span.section2Color .underline:hover {
+  background-size: 100% 100%;
 }
 
 body .mainMenus .content section .stepName span.section3Color {
   color: #6e4ccc;
 }
 
-body .mainMenus .content section .stepName .underline:before, body .mainMenus .content section .stepName .underline:after {
-  content: "";
+body .mainMenus .content section .stepName span.section3Color .underline {
+  color: inherit;
   text-decoration: none;
-  position: absolute;
-  width: 0px;
-  height: 5px;
-  background-color: #000000;
-  -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out;
-  -webkit-transition-duration: 0.75s;
-          transition-duration: 0.75s;
-  opacity: 0;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
 }
 
-body .mainMenus .content section .stepName .underline.underline-1::before, body .mainMenus .content section .stepName .underline.underline-1:after {
-  left: 0;
+body .mainMenus .content section .stepName span.section3Color .underline:hover {
+  background-size: 100% 100%;
 }
 
-body .mainMenus .content section .stepName:hover {
-  cursor: pointer;
+body .mainMenus .content section .stepName .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000 0%, #000000 4px, transparent 5px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
 }
 
-body .mainMenus .content section .stepName:hover .underline:before, body .mainMenus .content section .stepName:hover .underline:after {
-  width: 100%;
-  opacity: 1;
+body .mainMenus .content section .stepName .underline:hover {
+  background-size: 100% 100%;
 }
 
 body .mainMenus .content section .blocPlat {
@@ -625,6 +691,7 @@ body .mainMenus .content section .blocPlat .plats {
       -ms-flex-pack: end;
           justify-content: flex-end;
   font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 body .mainMenus .content section .blocPlat .plats .nomPlat {
@@ -632,7 +699,18 @@ body .mainMenus .content section .blocPlat .plats .nomPlat {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  font-size: 1.25rem;
+}
+
+@media screen and (max-width: 650px) {
+  body .mainMenus .content section .blocPlat .plats {
+    font-size: 1.75rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  body .mainMenus .content section .blocPlat {
+    margin: 0.5rem 0.75rem;
+  }
 }
 
 body .mainMenus .content footer {
