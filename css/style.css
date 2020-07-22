@@ -141,7 +141,7 @@ body main .home > .menus > .titleM .carte img {
   margin: 0 auto;
 }
 
-body main .home > .menus > .titleM .carte h2 {
+body main .home > .menus > .titleM .carte h1 {
   font-size: 1.875rem;
 }
 
@@ -244,7 +244,7 @@ body main .home p {
   margin: auto;
 }
 
-body main .home .last {
+body main .home .button {
   margin: auto;
   min-width: 10rem;
   width: 50%;
@@ -260,13 +260,13 @@ body main .home .last {
 }
 
 @media screen and (max-width: 650px) {
-  body main .home .last {
+  body main .home .button {
     width: 60%;
     margin-bottom: 5rem;
   }
 }
 
-body main .home .last .dot {
+body main .home .button .dot {
   background-color: #579c87;
   color: yellow;
   margin: auto 2px;
@@ -277,12 +277,12 @@ body main .home .last .dot {
   height: 0.5rem;
 }
 
-body main .home .last span.dot1 {
+body main .home .button span.dot1 {
   -webkit-animation-delay: -0.45s;
           animation-delay: -0.45s;
 }
 
-body main .home .last span.dot2 {
+body main .home .button span.dot2 {
   -webkit-animation-delay: -0.30s;
           animation-delay: -0.30s;
 }
