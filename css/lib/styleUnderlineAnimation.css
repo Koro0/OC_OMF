@@ -1,0 +1,64 @@
+span.section1Color {
+  color: #c67412;
+}
+
+span.section1Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #c67412 0%, #c67412 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+span.section1Color .underline:hover {
+  background-size: 100% 100%;
+}
+
+span.section2Color {
+  color: #a56799;
+}
+
+span.section2Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #a56799 0%, #a56799 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+span.section2Color .underline:hover {
+  background-size: 100% 100%;
+}
+
+span.section3Color {
+  color: #6e4ccc;
+}
+
+span.section3Color .underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #6e4ccc 0%, #6e4ccc 4px, transparent 4px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+span.section3Color .underline:hover {
+  background-size: 100% 100%;
+}
+
+.underline {
+  color: inherit;
+  text-decoration: none;
+  background: linear-gradient(to top, #000000 0%, #000000 4px, transparent 5px) no-repeat;
+  background-size: 0% 100%;
+  -webkit-transition: background-size 0.3s;
+  transition: background-size 0.3s;
+}
+
+.underline:hover {
+  background-size: 100% 100%;
+}
+/*# sourceMappingURL=styleUnderlineAnimation.css.map */

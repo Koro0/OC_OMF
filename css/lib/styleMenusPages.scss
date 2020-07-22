@@ -83,10 +83,14 @@
                         flex-grow: 1;
                         
                     }
+                    
                     @media screen and (max-width: 650px) {
                         font-size: 1.75rem;
+                        
                     }
                 }
+                
+                
                 @media screen and (max-width: 650px) {
                     margin: 0.5rem 0.75rem;
                     

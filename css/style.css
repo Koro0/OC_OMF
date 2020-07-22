@@ -718,6 +718,12 @@ body .mainMenus .content section .blocPlat .plats .nomPlat {
 }
 
 @media screen and (max-width: 650px) {
+  body .mainMenus .content section .blocPlat .menu4 .plats {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 650px) {
   body .mainMenus .content section .blocPlat {
     margin: 0.5rem 0.75rem;
   }
