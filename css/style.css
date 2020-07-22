@@ -28,7 +28,7 @@ body #logo {
   padding: 10px;
   background-color: #579c87;
   height: 10%;
-  margin: -1%;
+  margin: -0.5rem;
 }
 
 body #logo h1 {
@@ -315,6 +315,7 @@ body .footer {
   position: fixed;
   width: 100%;
   bottom: 0;
+  left: 0;
   background-color: #579c87;
 }
 
@@ -583,8 +584,18 @@ body .mainMenus .content header {
   margin: 0;
 }
 
-body .mainMenus .content h3, body .mainMenus .content h4, body .mainMenus .content img {
+body .mainMenus .content h3 {
+  font-size: 2.5rem;
+  margin-top: 0px;
+}
+
+body .mainMenus .content h4, body .mainMenus .content img {
   text-align: center;
+}
+
+body .mainMenus .content header img {
+  width: 9.375rem;
+  height: 9.375rem;
 }
 
 @media screen and (max-width: 650px) {
@@ -713,10 +724,20 @@ body .mainMenus .content section .blocPlat .plats .nomPlat {
 }
 
 body .mainMenus .content footer {
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 body .mainMenus .content footer h4 {
   margin: 0;
+  font-size: 2.5rem;
+}
+
+body #mentionPage {
+  margin-bottom: 5rem;
 }
 /*# sourceMappingURL=style.css.map */

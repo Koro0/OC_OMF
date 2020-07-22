@@ -31,10 +31,19 @@
         margin-bottom: 5rem;
         header {
             margin: 0;
+
         }
         
-        h3 , h4 , img {
+        h3 {
+            font-size: 2.5rem;
+            margin-top: 0px;
+        }
+        h4 , img {
             text-align: center;
+        }
+        header img {
+            width: 9.375rem;
+            height: 9.375rem;
         }
         @media screen and (max-width: 650px) {
             margin-left: 0;
@@ -85,10 +94,12 @@
             }
         }
         footer {
-        
-            text-align: center;
+            display: flex;
+            justify-content: center;
+            
             h4 {
                 margin: 0;
+                font-size: 2.5rem;
                 }
         }
     }        
