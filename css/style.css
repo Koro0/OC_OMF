@@ -97,7 +97,7 @@ body main .home > .menus {
 
 @media screen and (max-width: 650px) {
   body main .home > .menus {
-    max-width: 60%;
+    max-width: none;
   }
 }
 
