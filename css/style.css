@@ -15,7 +15,6 @@ body {
   /** font size for accessibility**/
   /**Couleur**/
   /** Style pour les pages de s menus**/
-  /** style sticky sur footer **/
 }
 
 @media screen and (max-width: 649px) {
@@ -719,23 +718,5 @@ body .mainMenus .content footer {
 
 body .mainMenus .content footer h4 {
   margin: 0;
-}
-
-body .stickyFooter {
-  position: -webkit-sticky;
-  position: sticky;
-  bottom: 0;
-  background-color: #579c87;
-}
-
-body .stickyHeader {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  background-color: #579c87;
-}
-
-body .mentions > article {
-  text-align: justify;
 }
 /*# sourceMappingURL=style.css.map */
