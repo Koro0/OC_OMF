@@ -156,8 +156,8 @@ body main .home a > div :hover {
 }
 
 body main .home a > div {
-  height: 300px;
-  max-width: 250px;
+  height: 350px;
+  max-width: 300px;
 }
 
 body main .home .menu1 {
@@ -714,12 +714,6 @@ body .mainMenus .content section .blocPlat .plats .nomPlat {
 @media screen and (max-width: 650px) {
   body .mainMenus .content section .blocPlat .plats {
     font-size: 1.75rem;
-  }
-}
-
-@media screen and (max-width: 650px) {
-  body .mainMenus .content section .blocPlat .menu4 .plats {
-    font-size: 1rem;
   }
 }
 
